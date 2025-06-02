@@ -1,11 +1,13 @@
 Common Ports
-  Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
-  Port 80 - HTTP.
-  Port 443 - HTTPS.
+  TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
   TCP Port 25 - SMTP.
+  TCP Port 80 - HTTP.
   TCP Port 110 - POP3.
+  TCP Port 143 - IMAP4.
+  TCP Port 443 - HTTPS.
   TCP Port 587 - SMTPS.
-  TCP Port 995 - POP3S.
+  TCP Port 993 - IMAP (secure version).
+  TCP Port 995 - POP3 (secure version).
 OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
   The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
     1. Physical - Basic equipment such as copper wires or fiberoptic cables.
@@ -47,3 +49,11 @@ Networking Protocols - Provide rules which allow computers to communicate with e
     SMTP - Simple Mail Transfer Protocol. Transfers EMAIL between clients and SMTP servers. The secure version is SMTPS.
     SMTPS - Simple Mail Transfer Protocol Secure. Encrypted using TLS.
     POP3 - Post Office Protocol. Transfers emails from servers to end users. The secure version has the same name.
+    IMAP4 - Internet Message Access Protocol. Used to store emails on a server and allow users to organize emails into folders on the server.
+    HTTP - Hypertext Transfer Protocol. Transmits web traffic between browsers and web servers.
+    HTTPS - Hypertext Transfer Protocol Secure. Uses TLS to encrypt HTTP.
+  Email Authentification Methods
+    SPF - Sender Policy Framework. Used DNS records to define the IP addresses that are authorized to send emails from certain domains.
+    DKIM - DomainKeys Identified Mail. Used public key cryptography to sign and verify an emails domain and content.
+    DMARC - Domain Based Authentification, Reporting, and Conformance.
+    

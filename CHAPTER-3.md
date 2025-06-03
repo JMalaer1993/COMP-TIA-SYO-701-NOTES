@@ -76,8 +76,24 @@ Networking Protocols - Provide rules which allow computers to communicate with e
     VPN - Virtual Private Network.
     OpenSSH - Open Secure Shell. Used to simplifies the use of SSH to connect remotely to servers.
       Open SSH Commands:
-        ss-keygen - creates a public/private key pair.
-        ss-copy-id - copies the public key to the server.
+        ssh-keygen - creates a public/private key pair.
+        ssh-copy-id - copies the public key to the server.
   Time Sychronizations Services
-    
-    
+    NTP - Network Time Protocol.
+  Network Allocation Services
+    DHCP - Dynamic Host Configuration Protocol.
+Basic Network Concepts
+  IPv4 - Internet Protocol Version 4. Uses 32-bit IP addresses expresses in dotted decimal format. There are public and private IP addresses.
+  ISP - Internet Service Provider. Purchase a range of public IP addresses and issue them to customers.
+  IPv6 - IPv4 was exausted back in 2011, so the IETF (Internet Engineering Task Force) created IPv6. Uses 128-bit IP addresses expressed in        hexadecimal format.
+  DNS - Domain Name System.
+    Zone Files:
+      A - Host record. Holds the host name and IPv4 address.
+      AAAA - Holds the host name and IPv6 address.
+      PTR - Pointer Record. A PTR (Pointer) record is used in reverse DNS lookups, where the query starts with an IP address and returns the           associated domain name, as opposed to the more common forward lookup, which starts with a domain name and returns its IP address.
+      MX - Mail Exchanger.
+      CNAME - Cononical Name. Used when a single system has multiple names associated with a single IP address.
+      SOA - Start of Authority. Contains information about a domain or zone.
+    DNSSEC - Domain Name System Security Extension. 
+      DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious         website. Connects users with malicious websites instead of the intended website.
+Basic Network Infrastructure

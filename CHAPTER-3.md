@@ -1,4 +1,4 @@
-Common Ports
+Common Ports: Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
   TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
   TCP Port 25 - SMTP.
   TCP Port 80 - HTTP.
@@ -19,7 +19,7 @@ OSI - Open Systems Interconnection: Describes the different activities that occu
     3. Network - Sends information between systems outside the local network using IP addresses.
     4. Transport - Provides end-to-end communication services using TCP or UDP.
     5. Session - Establishes, manages, and terminates sessions.
-    6. Presentation - Translates data into a standard format that can be understood by the application. Encryption and compression also occur at        this level.
+    6. Presentation - Translates data into a standard format that can be understood by the application. Encryption and compression also occur       at this level.
     7. Application - Provides network services to applications.
   Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, 
   and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
@@ -97,3 +97,12 @@ Basic Network Concepts
     DNSSEC - Domain Name System Security Extension. 
       DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious         website. Connects users with malicious websites instead of the intended website.
 Basic Network Infrastructure
+  Host - Any device with an IP address.
+  Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
+  associated with each port for future use.
+    Unicast - One to one traffic.
+    Broadcast - One to all traffic.
+    Switch Hardening: Improves security of switched.
+      Port Security - Disable unused ports.
+      MAC Filtering - Assign MACs to speicific ports.
+  Router - Connects networks togeather to create larger and larger networks.

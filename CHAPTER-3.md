@@ -4,10 +4,13 @@ Common Ports
   TCP Port 80 - HTTP.
   TCP Port 110 - POP3.
   TCP Port 143 - IMAP4.
+  TCP Port 389 - LDAP.
   TCP Port 443 - HTTPS.
   TCP Port 587 - SMTPS.
+  TCP Port 636 - LDAPS.
   TCP Port 993 - IMAP (secure version).
   TCP Port 995 - POP3 (secure version).
+  TCP Port 3389 - RDP.
 OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
   The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
     1. Physical - Basic equipment such as copper wires or fiberoptic cables.
@@ -37,7 +40,7 @@ Networking Protocols - Provide rules which allow computers to communicate with e
   Insecure Protocols for DIT - The following should NOT be used on modern networks because they are insecure and lack encryption.
     FTP - File Transfer Protocol. Transmits data in cleartext.
     TFTP - Use to transfer smaller amounts of data. Not a necessary protocol and often disabled.
-    SSL - Secure Sockets Layer. Used to be the primary way to secure HTTP but has been compromised and no long recommended for use. Vulerable to     the POODLE attack.
+    SSL - Secure Sockets Layer. Used to be the primary way to secure HTTP but has been compromised and no long recommended for use. Replaced by      TLS. Vulerable to the POODLE attack.
   Secure Protocols for DIT
     TLS - Transport Layer Security. The approved replacement for SSL used to secure HTTP. Used to encrypt many different protocols.
     IPsec - Used to encrypt IP traffic.
@@ -56,4 +59,25 @@ Networking Protocols - Provide rules which allow computers to communicate with e
     SPF - Sender Policy Framework. Used DNS records to define the IP addresses that are authorized to send emails from certain domains.
     DKIM - DomainKeys Identified Mail. Used public key cryptography to sign and verify an emails domain and content.
     DMARC - Domain Based Authentification, Reporting, and Conformance.
+    Email Gateway - Acts as a barrier between an organizations internal mail and the external internet.
+  Directory Services
+    AD DS - Active Directory Domain Service. Used by Microsoft. Provides authorization and authentication services for a network. Uses LDAP          encrypted with TLS.
+    LDAP - Lightweight Directory Access Protocol.
+    LDAPS - Lightweight Directory Access Protocol. Encrypts LDAP using TLS.
+  Voice and Video Service
+    UDP - User Datagram Protocol. Preferred over TCP for voice and video.
+    RTP - Realtime Transfer Protocol. Delivers audio and video over IP networks.
+    SRTP - Secure Realtime Transfer Protocol Secure.
+    VoIP - Voice over Internet Protocol.
+    SIP - Session Initiation Protocol.
+  Remote Access Services
+    Telenet - Data sent in cleartext, so no longer used.
+    RDP - Remote Desktop Protocol. Uses SSH for security.
+    VPN - Virtual Private Network.
+    OpenSSH - Open Secure Shell. Used to simplifies the use of SSH to connect remotely to servers.
+      Open SSH Commands:
+        ss-keygen - creates a public/private key pair.
+        ss-copy-id - copies the public key to the server.
+  Time Sychronizations Services
+    
     

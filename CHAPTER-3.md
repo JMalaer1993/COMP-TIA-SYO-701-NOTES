@@ -13,14 +13,13 @@ Common Ports: Not to be confused with physical ports found in switches. These ar
   TCP Port 3389 - RDP.
 OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
   The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
-    1. Physical - Basic equipment such as copper wires or fiberoptic cables.
-      MAC Address - Media Access Control Address. Assigned to the NIC (Network Interface Card). AKA physical address or hardware address.
-    2. Data Link - Switches operate here. Formats data into frames and delivers to systems within the local network using MAC address.
-    3. Network - Sends information between systems outside the local network using IP addresses.
-    4. Transport - Provides end-to-end communication services using TCP or UDP.
+    1. Physical - Wires, cables, MAC address.
+    2. Data Link - Switches, NICs.
+    3. Network - IP addresses, packet forwarding, routing.
+    4. Transport - TCP/UDP.
     5. Session - Establishes, manages, and terminates sessions.
-    6. Presentation - Translates data into a standard format that can be understood by the application. Encryption and compression also occur       at this level.
-    7. Application - Provides network services to applications.
+    6. Presentation - Encryption, decryption, compression.
+    7. Application - Closest to the end user.
   Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, 
   and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
 Networking Protocols - Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.

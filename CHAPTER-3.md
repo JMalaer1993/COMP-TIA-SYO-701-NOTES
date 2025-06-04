@@ -20,7 +20,7 @@
     5. Session - Establishes, manages, and terminates sessions.
     6. Presentation - Encryption, decryption, compression.
     7. Application - Closest to the end user.
-## Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
+### Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
 # Networking Protocols - Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.
 ## Common Protocols
     TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK). Guarenteed delivery.
@@ -107,3 +107,4 @@
             Switching Loop - Occurs when two ports of a switch are connected.
             BPDU - Bridge Protocol Data Unit. Sends messages between switched w
         Router - Connects networks togeather to create larger and larger networks.
+        

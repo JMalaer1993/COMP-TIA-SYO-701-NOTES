@@ -28,18 +28,18 @@
 # Networking Protocols
 #### Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.
 ## Common Protocols
- * TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK). Guarenteed delivery.
- * IP - Internet Protocol. Identifies host in a TCP/IP network and delivers data to and from these addresses.
+ * TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK).
+ * IP - Internet Protocol.
    + IPv4
    + IPv6
- * UDP - User Datagram Protocol. No session. Send and hope for the best.
- * HTTP - Hypertext Transfer Protocol. Uses port 80.
+ * UDP - User Datagram Protocol.
+ * HTTP - Hypertext Transfer Protocol.
  * HTTPS - Hypertext Transfer Protocol Secure.
  * SMTP - Simple Mail Transfer Protocol.
- * ICMP - Internet Control Message Protocol. Tests basic connectivitiy. Commonly used for DoS attacks and therefore commonly blocked at the         firewall and router.
+ * ICMP - Internet Control Message Protocol.
    + PING - Checks for connectivity.
    + Tracert - Trace network paths.
-  * ARP - Address Resolution Protocol. Resolves IPv4 addresses to MAC addresses. ARP works within a LAN.
+  * ARP - Address Resolution Protocol. Resolves IPv4 addresses to MAC addresses.
 ## Insecure Protocols for DIT
 #### The following should NOT be used on modern networks because they are insecure and lack encryption.
  * FTP - File Transfer Protocol. Transmits data in cleartext.

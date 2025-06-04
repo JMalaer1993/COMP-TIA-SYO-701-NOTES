@@ -37,7 +37,8 @@
       PING - Checks for connectivity.
       Tracert - Trace network paths.
     ARP - Address Resolution Protocol. Resolves IPv4 addresses to MAC addresses. ARP works within a LAN.
-## Insecure Protocols for DIT - The following should NOT be used on modern networks because they are insecure and lack encryption.
+## Insecure Protocols for DIT
+#### The following should NOT be used on modern networks because they are insecure and lack encryption.
     FTP - File Transfer Protocol. Transmits data in cleartext.
     TFTP - Use to transfer smaller amounts of data. Not a necessary protocol and often disabled.
     SSL - Secure Sockets Layer. Used to be the primary way to secure HTTP but has been compromised and no long recommended for use. Replaced by      TLS. Vulerable to the POODLE attack.

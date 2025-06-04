@@ -1,17 +1,17 @@
 # Common Ports 
 #### Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
-  * TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
-  * TCP Port 25 - SMTP.
-  * TCP Port 80 - HTTP.
-  * TCP Port 110 - POP3.
-  * TCP Port 143 - IMAP4.
-  * TCP Port 389 - LDAP.
-  * TCP Port 443 - HTTPS.
-  * TCP Port 587 - SMTPS.
-  * TCP Port 636 - LDAPS.
-  * TCP Port 993 - IMAP (secure version).
-  * TCP Port 995 - POP3 (secure version).
-  * TCP Port 3389 - RDP.
+ * TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
+ * TCP Port 25 - SMTP.
+ * TCP Port 80 - HTTP.
+ * TCP Port 110 - POP3.
+ * TCP Port 143 - IMAP4.
+ * TCP Port 389 - LDAP.
+ * TCP Port 443 - HTTPS.
+ * TCP Port 587 - SMTPS.
+ * TCP Port 636 - LDAPS.
+ * TCP Port 993 - IMAP (secure version).
+ * TCP Port 995 - POP3 (secure version).
+ * TCP Port 3389 - RDP.
 # OSI - Open Systems Interconnection
 #### Describes the different activities that occur on a system.
 ## The 7 OSI Layers

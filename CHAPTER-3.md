@@ -11,8 +11,8 @@
   ## TCP Port 993 - IMAP (secure version).
   ## TCP Port 995 - POP3 (secure version).
   ## TCP Port 3389 - RDP.
-OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
-  The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
+# OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
+  ## The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
     1. Physical - Wires, cables, MAC address.
     2. Data Link - Switches, NICs.
     3. Network - IP addresses, packet forwarding, routing.

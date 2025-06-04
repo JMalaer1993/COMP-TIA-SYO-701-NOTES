@@ -94,16 +94,16 @@
           SOA - Start of Authority. Contains information about a domain or zone.
         DNSSEC - Domain Name System Security Extension. 
         DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious website. Connects users with malicious websites instead of the intended website.
-Basic Network Infrastructure
-  Host - Any device with an IP address.
-  Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
-  associated with each port for future use.
-    Unicast - One to one traffic.
-    Broadcast - One to all traffic.
-    Switch Hardening: Improves security of switched.
-      Port Security - Disable unused ports.
-      MAC Filtering - Assign MACs to speicific ports.
-      STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
-        Switching Loop - Occurs when two ports of a switch are connected.
-        BPDU - Bridge Protocol Data Unit. Sends messages between switched w
-  Router - Connects networks togeather to create larger and larger networks.
+# Basic Network Infrastructure
+## Host - Any device with an IP address.
+## Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
+associated with each port for future use.
+Unicast - One to one traffic.
+Broadcast - One to all traffic.
+Switch Hardening: Improves security of switched.
+Port Security - Disable unused ports.
+MAC Filtering - Assign MACs to speicific ports.
+STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
+Switching Loop - Occurs when two ports of a switch are connected.
+BPDU - Bridge Protocol Data Unit. Sends messages between switched w
+Router - Connects networks togeather to create larger and larger networks.

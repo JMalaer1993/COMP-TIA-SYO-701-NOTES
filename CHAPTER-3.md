@@ -16,13 +16,13 @@
 #### Describes the different activities that occur on a system.
 ## The 7 OSI Layers
 #### Mnemonic: Please Do Not Throw Sausage Pizza Away.
-    1. Physical - Wires, cables, MAC address.
-    2. Data Link - Switches, NICs.
-    3. Network - IP addresses, packet forwarding, routing.
-    4. Transport - TCP/UDP.
-    5. Session - Establishes, manages, and terminates sessions.
-    6. Presentation - Encryption, decryption, compression.
-    7. Application - Closest to the end user.
+  1. Physical - Wires, cables, MAC address.
+  2. Data Link - Switches, NICs.
+  3. Network - IP addresses, packet forwarding, routing.
+  4. Transport - TCP/UDP.
+  5. Session - Establishes, manages, and terminates sessions.
+  6. Presentation - Encryption, decryption, compression.
+  7. Application - Closest to the end user.
 #### Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
 # Networking Protocols
 #### Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.

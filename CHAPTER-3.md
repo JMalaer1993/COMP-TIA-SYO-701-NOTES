@@ -106,11 +106,13 @@
         Unicast - One to one traffic.
         Broadcast - One to all traffic.
         Switch Hardening: Improves security of switched.
-            *Port Security - Disable unused ports.
-            *MAC Filtering - Assign MACs to speicific ports.
-            *STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
-            *Switching Loop - Occurs when two ports of a switch are connected.
-            *BPDU - Bridge Protocol Data Unit.
+            Port Security - Disable unused ports. MAC filetering.
+                MAC Filtering - Assign MACs to speicific ports.
+            STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
+                Switching Loop - Occurs when two ports of a switch are connected.
+            BPDU Guard - Bridge Protocol Data Unit Guard watches for switching loops.
     Router - Connects multiple network segments into a single network and routs traffic between the segments.
-        
-        
+        Router Hardening:
+            ACL - Access Control Lists. Identifies traffic to be allowed and traffic to be denied. Also used in firewalls. Filters traffic                  based on IP address, ports, and protocols based on rules.
+                Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied.
+                

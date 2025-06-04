@@ -88,12 +88,12 @@
         Zone Files:
           A - Host record. Holds the host name and IPv4 address.
           AAAA - Holds the host name and IPv6 address.
-          PTR - Pointer Record. A PTR (Pointer) record is used in reverse DNS lookups, where the query starts with an IP address and returns the           associated domain name, as opposed to the more common forward lookup, which starts with a domain name and returns its IP address.
+          PTR - Pointer Record. A PTR (Pointer) record is used in reverse DNS lookups, where the query starts with an IP address and returns the associated domain name, as opposed to the more common forward lookup, which starts with a domain name and returns its IP address.
           MX - Mail Exchanger.
           CNAME - Cononical Name. Used when a single system has multiple names associated with a single IP address.
           SOA - Start of Authority. Contains information about a domain or zone.
         DNSSEC - Domain Name System Security Extension. 
-        DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious         website. Connects users with malicious websites instead of the intended website.
+        DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious website. Connects users with malicious websites instead of the intended website.
 Basic Network Infrastructure
   Host - Any device with an IP address.
   Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 

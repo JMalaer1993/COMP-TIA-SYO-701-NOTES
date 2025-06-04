@@ -1,16 +1,16 @@
-Common Ports: Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
-  TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
-  TCP Port 25 - SMTP.
-  TCP Port 80 - HTTP.
-  TCP Port 110 - POP3.
-  TCP Port 143 - IMAP4.
-  TCP Port 389 - LDAP.
-  TCP Port 443 - HTTPS.
-  TCP Port 587 - SMTPS.
-  TCP Port 636 - LDAPS.
-  TCP Port 993 - IMAP (secure version).
-  TCP Port 995 - POP3 (secure version).
-  TCP Port 3389 - RDP.
+#Common Ports: Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
+  ##TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
+  ##TCP Port 25 - SMTP.
+  ##TCP Port 80 - HTTP.
+  ##TCP Port 110 - POP3.
+  ##TCP Port 143 - IMAP4.
+  ##TCP Port 389 - LDAP.
+  ##TCP Port 443 - HTTPS.
+  ##TCP Port 587 - SMTPS.
+  ##TCP Port 636 - LDAPS.
+  ##TCP Port 993 - IMAP (secure version).
+  ##TCP Port 995 - POP3 (secure version).
+  ##TCP Port 3389 - RDP.
 OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
   The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
     1. Physical - Wires, cables, MAC address.
@@ -104,4 +104,7 @@ Basic Network Infrastructure
     Switch Hardening: Improves security of switched.
       Port Security - Disable unused ports.
       MAC Filtering - Assign MACs to speicific ports.
+      STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
+        Switching Loop - Occurs when two ports of a switch are connected.
+        BPDU - Bridge Protocol Data Unit. Sends messages between switched w
   Router - Connects networks togeather to create larger and larger networks.

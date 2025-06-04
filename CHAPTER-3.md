@@ -1,4 +1,5 @@
-# Common Ports: Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
+# Common Ports 
+#### Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
     TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
     TCP Port 25 - SMTP.
     TCP Port 80 - HTTP.

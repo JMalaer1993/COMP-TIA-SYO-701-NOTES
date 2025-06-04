@@ -29,8 +29,8 @@
 ## Common Protocols
  * TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK). Guarenteed delivery.
  * IP - Internet Protocol. Identifies host in a TCP/IP network and delivers data to and from these addresses.
-  ** IPv4 - 32 bit. Octets.
-  ** IPv6 - Hexadecimal.
+  - IPv4 - 32 bit. Octets.
+  - IPv6 - Hexadecimal.
     UDP - User Datagram Protocol. No session. Send and hope for the best.
     HTTP - Hypertext Transfer Protocol. Uses port 80.
     HTTPS - Hypertext Transfer Protocol Secure.
@@ -114,5 +114,5 @@
     Router - Connects multiple network segments into a single network and routs traffic between the segments.
         Router Hardening:
             ACL - Access Control Lists. Identifies traffic to be allowed and traffic to be denied. Also used in firewalls. Filters traffic                  based on IP address, ports, and protocols based on rules.
-                Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied.
+                Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied. The last rule in the                    ACL.
                 

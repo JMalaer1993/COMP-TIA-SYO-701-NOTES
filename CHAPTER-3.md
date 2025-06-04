@@ -12,7 +12,8 @@
     TCP Port 993 - IMAP (secure version).
     TCP Port 995 - POP3 (secure version).
     TCP Port 3389 - RDP.
-# OSI - Open Systems Interconnection: Describes the different activities that occur on a system.
+# OSI - Open Systems Interconnection
+#### Describes the different activities that occur on a system.
 ## The 7 OSI Layers - Please Do Not Throw Sausage Pizza Away.
     1. Physical - Wires, cables, MAC address.
     2. Data Link - Switches, NICs.
@@ -21,7 +22,7 @@
     5. Session - Establishes, manages, and terminates sessions.
     6. Presentation - Encryption, decryption, compression.
     7. Application - Closest to the end user.
-### Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
+#### Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
 # Networking Protocols - Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.
 ## Common Protocols
     TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK). Guarenteed delivery.

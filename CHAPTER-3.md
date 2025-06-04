@@ -31,14 +31,14 @@
  * IP - Internet Protocol. Identifies host in a TCP/IP network and delivers data to and from these addresses.
   - IPv4 - 32 bit. Octets.
   - IPv6 - Hexadecimal.
-    UDP - User Datagram Protocol. No session. Send and hope for the best.
-    HTTP - Hypertext Transfer Protocol. Uses port 80.
-    HTTPS - Hypertext Transfer Protocol Secure.
-    SMTP - Simple Mail Transfer Protocol.
-    ICMP - Internet Control Message Protocol. Tests basic connectivitiy. Commonly used for DoS attacks and therefore commonly blocked at the         firewall and router.
-      PING - Checks for connectivity.
-      Tracert - Trace network paths.
-    ARP - Address Resolution Protocol. Resolves IPv4 addresses to MAC addresses. ARP works within a LAN.
+ * UDP - User Datagram Protocol. No session. Send and hope for the best.
+ * HTTP - Hypertext Transfer Protocol. Uses port 80.
+ * HTTPS - Hypertext Transfer Protocol Secure.
+ * SMTP - Simple Mail Transfer Protocol.
+ * ICMP - Internet Control Message Protocol. Tests basic connectivitiy. Commonly used for DoS attacks and therefore commonly blocked at the         firewall and router.
+   - PING - Checks for connectivity.
+   - Tracert - Trace network paths.
+  * ARP - Address Resolution Protocol. Resolves IPv4 addresses to MAC addresses. ARP works within a LAN.
 ## Insecure Protocols for DIT
 #### The following should NOT be used on modern networks because they are insecure and lack encryption.
     FTP - File Transfer Protocol. Transmits data in cleartext.

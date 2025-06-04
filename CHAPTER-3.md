@@ -42,7 +42,7 @@
 ## Insecure Protocols for DIT
 #### The following should NOT be used on modern networks because they are insecure and lack encryption.
  * FTP - File Transfer Protocol. Transmits data in cleartext.
- * TFTP - Use to transfer smaller amounts of data. Not a necessary protocol and often disabled.
+ * TFTP - Trivial File Transfer Protocol. Use to transfer smaller amounts of data. Not a necessary protocol and often disabled.
  * SSL - Secure Sockets Layer. Used to be the primary way to secure HTTP but has been compromised and no long recommended for use. Replaced by TLS. Vulerable to the POODLE attack.
 ## Secure Protocols for DIT
     TLS - Transport Layer Security. The approved replacement for SSL used to secure HTTP. Used to encrypt many different protocols.
@@ -100,19 +100,20 @@
         DNSSEC - Domain Name System Security Extension. 
         DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious website. Connects users with malicious websites instead of the intended website.
 # Basic Network Infrastructure
-    Host - Any device with an IP address.
-    Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
+ * Host - Any device with an IP address.
+ * Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
     associated with each port for future use.
-        Unicast - One to one traffic.
-        Broadcast - One to all traffic.
-        Switch Hardening: Improves security of switched.
-            Port Security - Disable unused ports. MAC filetering.
-                MAC Filtering - Assign MACs to speicific ports.
-            STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
-                Switching Loop - Occurs when two ports of a switch are connected.
-            BPDU Guard - Bridge Protocol Data Unit Guard watches for switching loops.
-    Router - Connects multiple network segments into a single network and routs traffic between the segments.
-        Router Hardening:
-            ACL - Access Control Lists. Identifies traffic to be allowed and traffic to be denied. Also used in firewalls. Filters traffic                  based on IP address, ports, and protocols based on rules.
-                Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied. The last rule in the                    ACL.
-                
+   + Unicast - One to one traffic.
+   + Broadcast - One to all traffic.
+   + Switch Hardening: Improves security of switched.
+      - Port Security - Disable unused ports. MAC filetering.
+      - MAC Filtering - Assign MACs to speicific ports.
+      - STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
+      - Switching Loop - Occurs when two ports of a switch are connected.
+      - BPDU Guard - Bridge Protocol Data Unit Guard watches for switching loops.
+ * Router - Connects multiple network segments into a single network and routs traffic between the segments.
+    + Router Hardening:
+       - ACL - Access Control Lists. Identifies traffic to be allowed and traffic to be denied. Also used in firewalls. Filters traffic                  based on IP address, ports, and protocols based on rules.
+       - Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied. The last rule in the                    ACL.
+    + Default Gateway - The router is the default gateway of a network.
+        

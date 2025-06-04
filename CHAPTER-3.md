@@ -12,6 +12,7 @@
  * TCP Port 993 - IMAP (secure version).
  * TCP Port 995 - POP3 (secure version).
  * TCP Port 3389 - RDP.
+ * UDP Port 161 & 162 - SNMPv3.
  # OSI - Open Systems Interconnection
 #### Describes the different activities that occur on a system.
 ## The 7 OSI Layers
@@ -29,15 +30,15 @@
 ## Common Protocols
  * TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK). Guarenteed delivery.
  * IP - Internet Protocol. Identifies host in a TCP/IP network and delivers data to and from these addresses.
-   - IPv4
-   - IPv6
+   + IPv4
+   + IPv6
  * UDP - User Datagram Protocol. No session. Send and hope for the best.
  * HTTP - Hypertext Transfer Protocol. Uses port 80.
  * HTTPS - Hypertext Transfer Protocol Secure.
  * SMTP - Simple Mail Transfer Protocol.
  * ICMP - Internet Control Message Protocol. Tests basic connectivitiy. Commonly used for DoS attacks and therefore commonly blocked at the         firewall and router.
-   - PING - Checks for connectivity.
-   - Tracert - Trace network paths.
+   + PING - Checks for connectivity.
+   + Tracert - Trace network paths.
   * ARP - Address Resolution Protocol. Resolves IPv4 addresses to MAC addresses. ARP works within a LAN.
 ## Insecure Protocols for DIT
 #### The following should NOT be used on modern networks because they are insecure and lack encryption.
@@ -101,7 +102,7 @@
         DNS poisoning - AKA DNS cache poinsoning. Occurs when attackers change the IP address associated with domain name to that of a malicious website. Connects users with malicious websites instead of the intended website.
 # Basic Network Infrastructure
  * Host - Any device with an IP address.
- * Switch - Connects hosts togeather to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
+ * Switch - Connects hosts together to create a network. Creates connections using switches. Pays attention to and remembers the MAC address 
     associated with each port for future use.
    + Unicast - One to one traffic.
    + Broadcast - One to all traffic.
@@ -115,5 +116,10 @@
     + Router Hardening:
        - ACL - Access Control Lists. Identifies traffic to be allowed and traffic to be denied. Also used in firewalls. Filters traffic                  based on IP address, ports, and protocols based on rules.
        - Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied. The last rule in the                    ACL.
-    + Default Gateway - The router is the default gateway of a network.
+    + Default Gateway - The router is the default gateway of a network connecting the LAN to the internet.
+ * SNMP - Simple Network Management Protocol. Monitors and manages network devices such as switches and routers.
+    + SNMP Traps - SNMP agents send information through notifications to SNMP managers. These notifications are known as SNMP traps or device traps.
+    + SNMPv3 - Version 1 and version 2 both have vulnerabilities, but version 3 uses encryption. Used to provide secure management of a system.
+ * Firewalls -  Filters incoming and outgoing traffic for a single host or between networks.
+    + 
         

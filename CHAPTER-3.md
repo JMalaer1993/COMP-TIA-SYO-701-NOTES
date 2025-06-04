@@ -106,10 +106,11 @@
         Unicast - One to one traffic.
         Broadcast - One to all traffic.
         Switch Hardening: Improves security of switched.
-            Port Security - Disable unused ports.
-            MAC Filtering - Assign MACs to speicific ports.
-            STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
-            Switching Loop - Occurs when two ports of a switch are connected.
-            BPDU - Bridge Protocol Data Unit. Sends messages between switched w
-        Router - Connects networks togeather to create larger and larger networks.
+            *Port Security - Disable unused ports.
+            *MAC Filtering - Assign MACs to speicific ports.
+            *STP/RSTP - Spanning Tree Protocol and Rapid Spanning Tree Protocol provide boradcast storm prevention and loop prevention.
+            *Switching Loop - Occurs when two ports of a switch are connected.
+            *BPDU - Bridge Protocol Data Unit.
+    Router - Connects multiple network segments into a single network and routs traffic between the segments.
+        
         

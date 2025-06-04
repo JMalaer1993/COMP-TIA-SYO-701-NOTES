@@ -120,6 +120,15 @@
  * SNMP - Simple Network Management Protocol. Monitors and manages network devices such as switches and routers.
     + SNMP Traps - SNMP agents send information through notifications to SNMP managers. These notifications are known as SNMP traps or device traps.
     + SNMPv3 - Version 1 and version 2 both have vulnerabilities, but version 3 uses encryption. Used to provide secure management of a system.
- * Firewalls -  Filters incoming and outgoing traffic for a single host or between networks.
-    + 
+ * Firewalls -  Monitors and manages incoming and outgoing traffic.
+    + Host Based Firewall - Monitors traffic passing through the NIC.
+    + Network Based Firewall - Monitors traffing passing through the network.
+    + Stateless Firewall -
+    + Firewall Rules
+       * Permission - Green Light: PERMIT and ALLOW. Red Light: DENY.
+       * Protocol - Typically TCP or UDP. ICMP (internet control message protocol) can be blocked to prevent being PINGed.
+       * Source - Permit or deny data coming from specific IP addresses.
+       * Destination - Permit or deny data going to specific IP addresses.
+       * Port - Permit or deny data based on the port.
+       * Implicit Deny - The last rule. Deny any traffic not explicitly allowed. DENY ANY ANY, DENY ANY, or DROP ALL.
         

@@ -150,7 +150,7 @@
  * Logical Separation and Segmentation -
     + Firewalls
     + Routers
-    + VLANs - Separate traffic on the same physical network using switches. Can be used to separate networks based on type of traffic or connected users on separate networks.
+    + VLANs - Separate traffic on the same physical network using switches. Can be used to separate networks based on type of traffic or connect users on separate networks.
  * Network Appliances
  * Proxy Servers
     + Caching - Proxy servers "remember" the pages you search. Then, instead of retrieving the page from the domain server in the future, it just pulls it from the cache. Cache in this context is just temporary storage. It comes with a TTL (time to live). This prevents you from retrieving a stale page.

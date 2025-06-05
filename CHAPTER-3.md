@@ -135,6 +135,6 @@
     + WAF - Web Application Firewall. Provides and added lay of protection for web applications. Designed specifically for web based attacks.
     + NGFW - Next Gen Firewall. AKA Layer 7 (application) firewalls. They provide for deep packet inspection and look through every layer of the OSI model.
     + Fail States - Firewalls are designed to either fail open or fail closed.
-     - Fail Open - Allows ALL traffic to pass after failing. Maintains system available but provides NO security.
-     - Fail Closed - Allows NO traffic to pass after failing. Maintains security but system becomes unavilable. This is the one security professionals prefer for obvious reasons.
+       - Fail Open - Allows ALL traffic to pass after failing. Maintains system available but provides NO security.
+       - Fail Closed - Allows NO traffic to pass after failing. Maintains security but system becomes unavilable. This is the one security professionals prefer for obvious reasons.
 # Network Designs

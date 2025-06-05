@@ -13,7 +13,7 @@
  * TCP Port 995 - POP3 (secure version).
  * TCP Port 3389 - RDP.
  * UDP Port 161 & 162 - SNMPv3.
- # OSI - Open Systems Interconnection
+# OSI - Open Systems Interconnection
 #### Describes the different activities that occur on a system.
 ## The 7 OSI Layers
 #### Mnemonic: Please Do Not Throw Sausage Pizza Away.

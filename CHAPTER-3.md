@@ -89,7 +89,7 @@
 # Basic Network Concepts
       IPv4 - Internet Protocol Version 4. Uses 32-bit IP addresses expresses in dotted decimal format. There are public and private IP addresses.
       ISP - Internet Service Provider. Purchase a range of public IP addresses and issue them to customers.
-      IPv6 - IPv4 was exausted back in 2011, so the IETF (Internet Engineering Task Force) created IPv6. Uses 128-bit IP addresses expressed in        hexadecimal format.
+      IPv6 - IPv4 was exausted back in 2011, so the IETF (Internet Engineering Task Force) created IPv6. Uses 128-bit IP addresses expressed in hexadecimal format.
       DNS - Domain Name System.
         Zone Files:
           A - Host record. Holds the host name and IPv4 address.

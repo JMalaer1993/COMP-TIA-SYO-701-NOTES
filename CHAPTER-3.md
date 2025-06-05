@@ -138,3 +138,22 @@
        - Fail Open - Allows ALL traffic to pass after failing. Maintains system available but provides NO security.
        - Fail Closed - Allows NO traffic to pass after failing. Maintains security but system becomes unavilable. This is the one security professionals prefer for obvious reasons.
 # Network Designs
+ * Security Zones - Rather than being connected directly to the internet, networks are divided into security zones. The goal of having security zones is to reduce the attack surface of a network.
+    + Intranet - Internal network.
+    + Extranet - Part of a network than can be accessed by authorized external entitites.
+    + DMZ - Demilitarized Zone. AKA screened subnet. A security zone between a private network and the internet. It's like the front porch of your internal network.
+ * NAT Gateway - Network Address Translation Gateway. Protocol that translate public IP addresses to private IP addresses. Hides internal computers from the internet. Not compatible with IPsec.
+    + Static NAT - 1 public IP address to 1 private IP address.
+    + Dynamic NAT - Changes to public IP address that private IP addresses use.
+    + PAT - Port Address Translation. A common form of NAT.
+ * Physical Isolation and Air Gaps - Ensures networks are completely separated from eachother through the use of a physical separation.
+ * Logical Separation and Segmentation -
+    + Firewalls
+    + Routers
+    + VLANs - Separate traffic on the same physical network using switches. Can be used to separate networks based on type of traffic or connected users on separate networks.
+ * Network Appliances
+ * Proxy Servers
+    + Caching - Proxy servers "remember" the pages you search. Then, instead of retrieving the page from the domain server in the future, it just pulls it from the cache. Cache in this context is just temporary storage. It comes with a TTL (time to live). This prevents you from retrieving a stale page.
+    + Content Filtering - Examine user requests before passing the request along. Unauthorized sites are added to a block list.
+    + Logs - Proxy severs also log user requests.
+      

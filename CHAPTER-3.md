@@ -13,7 +13,7 @@
  * TCP Port 995 - POP3 (secure version).
  * TCP Port 3389 - RDP.
  * UDP Port 161 & 162 - SNMPv3.
-# OSI - Open Systems Interconnection
+# OSI Model - Open Systems Interconnection
 #### Describes the different activities that occur on a system.
 ## The 7 OSI Layers
 #### Mnemonic: Please Do Not Throw Sausage Pizza Away.
@@ -24,7 +24,7 @@
  5. Session - Establishes, manages, and terminates sessions.
  6. Presentation - Encryption, decryption, compression.
  7. Application - Closest to the end user.
-* Encapsulation/Decapsulation - As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed.
+#### As data moves down the OSI layers, it is wrapped in headers allowing the data to reach its intended destination, and also provide a return address so the request can be fulfilled. As it moves back up the layers, these headers are removed. This is known as encapsulation and decapsulation.
 # Networking Protocols
 #### Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.
 ## Common Protocols
@@ -123,7 +123,7 @@
  * Firewalls -  Monitors and manages incoming and outgoing traffic.
     + Host Based Firewall - Monitors traffic passing through the NIC.
     + Network Based Firewall - Monitors traffing passing through the network.
-    + Stateless Firewall -
+    + Stateless Firewall - Uses rules implemented in ACLs to filter traffic. A router using an ACL is very similar to a stateless firewall. Treats each network packet is its own event. Fast, but no context awareness. Does not provide highest level of security.
     + Firewall Rules
        * Permission - Green Light: PERMIT and ALLOW. Red Light: DENY.
        * Protocol - Typically TCP or UDP. ICMP (internet control message protocol) can be blocked to prevent being PINGed.
@@ -131,4 +131,10 @@
        * Destination - Permit or deny data going to specific IP addresses.
        * Port - Permit or deny data based on the port.
        * Implicit Deny - The last rule. Deny any traffic not explicitly allowed. DENY ANY ANY, DENY ANY, or DROP ALL.
-        
+    + Stateful Firewall - AKA layer 4 (transport) firewall. Monitors data in the context of states within a session.
+    + WAF - Web Application Firewall. Provides and added lay of protection for web applications. Designed specifically for web based attacks.
+    + NGFW - Next Gen Firewall. AKA Layer 7 (application) firewalls. They provide for deep packet inspection and look through every layer of the OSI model.
+    + Fail States - Firewalls are designed to either fail open or fail closed.
+    + Fail Open - Allows ALL traffic to pass after failing. Maintains system available but provides NO security.
+    + Fail Closed - Allows NO traffic to pass after failing. Maintains security but system becomes unavilable. This is the one security professionals prefer for obvious reasons.
+# Network Designs

@@ -152,8 +152,27 @@
     + Routers
     + VLANs - Separate traffic on the same physical network using switches. Can be used to separate networks based on type of traffic or connect users on separate networks.
  * Network Appliances
- * Proxy Servers
+ * Proxy Servers - The middle man between the private network and the internet.
     + Caching - Proxy servers "remember" the pages you search. Then, instead of retrieving the page from the domain server in the future, it just pulls it from the cache. Cache in this context is just temporary storage. It comes with a TTL (time to live). This prevents you from retrieving a stale page.
     + Content Filtering - Examine user requests before passing the request along. Unauthorized sites are added to a block list.
     + Logs - Proxy severs also log user requests.
-      
+    + Forward Proxy (retrieving) - Fetches data from the internet for you.
+    + Reverse Proxy (sending) - Passes data along to the internet for you.
+ * UTM - Unified Threat Management. A single solution that combines multiple security controls. Provides:
+    + URL Filtering
+    + Content Inspection
+    + Malware Inspection
+    + DDoS Mitigator
+ * Jump Server - A hardened server in a DMZ or screened subnet which adminstrators can "jump" through and use OpenSSH to do adminstrative stuff on remote servers within the internal network.
+ * ZTNA - Zero Trust Network Access.
+    + Adaptive Identity Authentication.
+    + Control Plane - Handles authentication, authorization, and policy enforcement.
+       - PE - Policy Engine. Grants access.
+       - PA - Policy Administrator. The communication middle man between the PEP and PE.
+       - Policy Decision Point - PE + PA.
+    + Data Plane - Handles traffic of data between resource and user. This is the delivery path.
+       - Subject
+       - System
+       - PEP - Policy Enforcement Point.
+       - Enterprise Resource
+    + SASE - Secure Access Service Edge. Combines network and security functions and delivers them as an intergrated cloud system.

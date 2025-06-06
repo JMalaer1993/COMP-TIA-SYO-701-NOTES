@@ -28,8 +28,8 @@
 # Networking Protocols
 #### Provide rules which allow computers to communicate with each other over the network. These are kind of like different languages the computers speak.
 ## Common Protocols
- * TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK).
- * IP - Internet Protocol.
+ * TCP - Transmission Control Protocol. Establishes session via three way handshake (SYN-SYN/ACK-ACK). Guarenteed delivery.
+ * IP - Internet Protocol. No session. Send data and hope for the best.
    + IPv4
    + IPv6
  * UDP - User Datagram Protocol.

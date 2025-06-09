@@ -124,9 +124,10 @@
     + SNMP Traps - SNMP agents send information through notifications to SNMP managers. These notifications are known as SNMP traps or device traps.
     + SNMPv3 - Version 1 and version 2 both have vulnerabilities, but version 3 uses encryption. Used to provide secure management of a system.
  * Firewalls -  Monitors and manages incoming and outgoing traffic.
-    + Host Based Firewall - Monitors traffic passing through the NIC.
+    + Host Based Firewall - Monitors traffic passing through the NIC, or individual host.
     + Network Based Firewall - Monitors traffing passing through the network.
-    + Stateless Firewall - Uses rules implemented in ACLs to filter traffic. A router using an ACL is very similar to a stateless firewall. Treats each network packet is its own event. Fast, but no context awareness. Does not provide highest level of security.
+    + Stateless Firewall - Uses rules implemented in ACLs to filter traffic. A router using an ACL is very similar to a stateless firewall. Treats each network packet as its own event. Fast, but no context awareness. Does not provide highest level of security.
+    + Stateful Firewall - AKA layer 4 (transport) firewall. Monitors data in the context of states within a session.
     + Firewall Rules
        * Permission - Green Light: PERMIT and ALLOW. Red Light: DENY.
        * Protocol - Typically TCP or UDP. ICMP (internet control message protocol) can be blocked to prevent being PINGed.
@@ -134,7 +135,6 @@
        * Destination - Permit or deny data going to specific IP addresses.
        * Port - Permit or deny data based on the port.
        * Implicit Deny - The last rule. Deny any traffic not explicitly allowed. DENY ANY ANY, DENY ANY, or DROP ALL.
-    + Stateful Firewall - AKA layer 4 (transport) firewall. Monitors data in the context of states within a session.
     + WAF - Web Application Firewall. Provides and added lay of protection for web applications. Designed specifically for web based attacks.
     + NGFW - Next Gen Firewall. AKA Layer 7 (application) firewall. They provide for deep packet inspection and look through every layer of the OSI model.
     + Fail States - Firewalls are designed to either fail open or fail closed.
@@ -144,8 +144,8 @@
  * Security Zones - Rather than being connected directly to the internet, networks are divided into security zones. The goal of having security zones is to reduce the attack surface of a network.
     + Intranet - Internal network.
     + Extranet - Part of a network than can be accessed by authorized external entitites.
-    + DMZ - Demilitarized Zone. AKA screened subnet. A security zone between a private network and the internet. It's like the front porch of your internal network.
- * NAT Gateway - Network Address Translation Gateway. Protocol that translate public IP addresses to private IP addresses. Hides internal computers from the internet. Not compatible with IPsec.
+    + DMZ - Demilitarized Zone. AKA screened subnet. A security zone between a private network and the internet. It's like the front porch of your internal network. Provides a layer of protections for servers that are accessible from the internet.
+ * NAT Gateway - Network Address Translation Gateway. Protocol that translate public IP addresses to private IP addresses. Hides internal computers from the internet. Not compatible with IPsec. The NAT gateway is the actual device that does the tanslation.
     + Static NAT - 1 public IP address to 1 private IP address.
     + Dynamic NAT - Changes to public IP address that private IP addresses use.
     + PAT - Port Address Translation. A common form of NAT.
@@ -165,7 +165,7 @@
     + URL Filtering
     + Content Inspection
     + Malware Inspection
-    + DDoS Mitigator
+    + DDoS (distributed denial of service) Mitigator
  * Jump Server - A hardened server in a DMZ or screened subnet which adminstrators can "jump" through and use OpenSSH to do adminstrative stuff on remote servers within the internal network.
  * ZTNA - Zero Trust Network Access.
     + Adaptive Identity Authentication.

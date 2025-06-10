@@ -2,7 +2,7 @@
 #### Not to be confused with physical ports found in switches. These are logical ports, which are numbers embeded in packets.
  * TCP Port 22 - SSH, SFTP. It makes sense that these two use the same port since SFTP uses SSH.
  * TCP Port 25 - SMTP.
- * TCP Port 53 - DNS zone transfers.
+ * TCP Port 53 - DNS zone transfers. 
  * TCP Port 80 - HTTP.
  * TCP Port 110 - POP3.
  * TCP Port 143 - IMAP4.
@@ -120,7 +120,9 @@
        - ACL - Access Control Lists. Identifies traffic to be allowed and traffic to be denied. Also used in firewalls. Filters traffic                  based on IP address, ports, and protocols based on rules.
        - Implicit Deny - All traffic that is not explicity allowed (based on the rules) is automatically denied. The last rule in the                    ACL.
     + Default Gateway - The router is the default gateway of a network connecting the LAN to the internet.
- * SNMP - Simple Network Management Protocol. Monitors and manages network devices such as switches and routers.
+    + Routing Table - Guides packets towards their destination via the most optimal path possible.
+    + Route Command - The route command can be used to display and manipulate the routing table on a Linux computer.
+ * SNMP - Simple Network Management Protocol. Monitors and manages network devices such as switches and routers. Does NOT transfer data over a network.
     + SNMP Traps - SNMP agents send information through notifications to SNMP managers. These notifications are known as SNMP traps or device traps.
     + SNMPv3 - Version 1 and version 2 both have vulnerabilities, but version 3 uses encryption. Used to provide secure management of a system.
  * Firewalls -  Monitors and manages incoming and outgoing traffic.
@@ -142,9 +144,9 @@
        - Fail Closed - Allows NO traffic to pass after failing. Maintains security but system becomes unavilable. This is the one security professionals prefer for obvious reasons.
 # Network Designs
  * Security Zones - Rather than being connected directly to the internet, networks are divided into security zones. The goal of having security zones is to reduce the attack surface of a network.
-    + Intranet - Internal network.
-    + Extranet - Part of a network than can be accessed by authorized external entitites.
-    + DMZ - Demilitarized Zone. AKA screened subnet. A security zone between a private network and the internet. It's like the front porch of your internal network. Provides a layer of protections for servers that are accessible from the internet.
+    + Intranet - Internal private network.
+    + Extranet - Part of the private network than can be accessed by authorized external entitites.
+    + DMZ - Demilitarized Zone. AKA screened subnet. A security zone between a private network and the internet. It's like the front porch of your internal network. Provides a layer of protections for servers that are accessible from the internet. Systems accessed by the general public should always be placed in the DMZ or screen subnet.
  * NAT Gateway - Network Address Translation Gateway. Protocol that translate public IP addresses to private IP addresses. Hides internal computers from the internet. Not compatible with IPsec. The NAT gateway is the actual device that does the tanslation.
     + Static NAT - 1 public IP address to 1 private IP address.
     + Dynamic NAT - Changes to public IP address that private IP addresses use.
@@ -153,7 +155,7 @@
  * Logical Separation and Segmentation -
     + Firewalls
     + Routers
-    + VLANs - Separate traffic on the same physical network using switches. Can be used to separate networks based on type of traffic or connect users on separate networks.
+    + VLANs - Virtual Local Area Network. Separate traffic on the same physical network using switches. Can be used to separate networks based on type of traffic or connect users on separate networks.
  * Network Appliances
  * Proxy Servers - The middle man between the private network and the internet.
     + Caching - Proxy servers "remember" the pages you search. Then, instead of retrieving the page from the domain server in the future, it just pulls it from the cache. Cache in this context is just temporary storage. It comes with a TTL (time to live). This prevents you from retrieving a stale page.

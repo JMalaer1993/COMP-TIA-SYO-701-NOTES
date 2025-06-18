@@ -28,4 +28,17 @@
 # Wireless Networks
 * WLAN -
 * AP - Access Point. As the name suggest, its just an access point to the network. All wireless routers are APs, but not all APs are wireless routers. Some APs just give you access to the network but not the internet.
-* WAN 
+* WAN
+* SSID - Service Set Identifyer. The name given to the wireless network. If your AP comes with a default SSID, its a good idea to change it.
+* MAC Filtering - Just as MAC fltering can be used to harden switches, it can also be used to harden wireless routers. Most wireless routers allow you to specific which MAC address to allow, and then it will block all others. This way, no one else can connect to your wireless network, even if they have the password. Unless they spoof their MAC address.
+   + Wireless Sniffer - Allows someone to determine which MAC addresses a wireless router allows.
+* Site Survery -
+   + Wifi Analyzer - A tool used in site surveys.
+   + Heat Map - This is where the term "hot spot" comes from. The opposite of a hot spot is a "dead spot."
+   + Foot Printing - Overlay the heat map onto the blueprint of the building, and you get foot printing. Now you can easily tell where in the building you have hot spots and dead spots.
+* WEP - Wired Equivalent Privacy. Deprecated.
+* WPA - Wi-Fi Protected Access. Deprecated.
+* WPA2 - Much more secure. Uses AES (advances encryption standars) and CCMP (I'm not even going to say what that stands for). It can operate in 3 modes:
+   + Open - No security. All data transferred in cleartext.
+   + PSK - Pre-shared Key. Users access the wireless network anonymously using a password or pass key.
+   + Enterprise - User access the network using unique credentials such as a username and password.

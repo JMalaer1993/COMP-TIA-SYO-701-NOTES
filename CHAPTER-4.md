@@ -38,7 +38,28 @@
    + Foot Printing - Overlay the heat map onto the blueprint of the building, and you get foot printing. Now you can easily tell where in the building you have hot spots and dead spots.
 * WEP - Wired Equivalent Privacy. Deprecated.
 * WPA - Wi-Fi Protected Access. Deprecated.
-* WPA2 - Much more secure. Uses AES (advances encryption standars) and CCMP (I'm not even going to say what that stands for). It can operate in 3 modes:
+* WPA2 - Much more secure than WPA. Uses AES (advances encryption standars) and CCMP (I'm not even going to say what that stands for). It can operate in 3 modes:
    + Open - No security. All data transferred in cleartext.
    + PSK - Pre-shared Key. Users access the wireless network anonymously using a password or pass key.
    + Enterprise - User access the network using unique credentials such as a username and password.
+      - RADIUS Server - 802.1X server.
+      - RADIUS Port - 1812.
+      - Shared Secret
+   + RADIUS - Remote Authentication Dial-In User Service.
+* WPA3 - Newest generation. Just like WPA2, it has 3 modes:
+   + Enhanced Open - Unlike the open mode of WPA2, enhanced open provides security through encryption. Used for guest accounts.
+   + SAE - Simultaneous Authentication of Equals. Its like PSK mode of WPA2, but more secure.
+   + Enterprise - Pretty much the same as WPA2.
+# Authentication Protocols
+* EAP - Extensible Authentication Protocol. Has many variations:
+   + PMK
+   + PTK
+   + PEAP
+   + EAP-FAST
+   + LEAP
+   + EAP-TLS
+   + EAP-TTLS
+#### EAP-FAST supports PAC (Protected Access Credentials) instead of certificates. PEAP and EAP-TTLS requires certificates on the servers but not the clients. EAP-TLS requires certificates on the server and clients.
+* RADIUS Federation -
+* IEEE 802.1X - Used for port security. Good for exposed ports that people may or may not have to plug into to gain access to the network.
+* 

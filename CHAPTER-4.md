@@ -52,14 +52,13 @@
    + Enterprise - Pretty much the same as WPA2.
 # Authentication Protocols
 * EAP - Extensible Authentication Protocol. Has many variations:
-   + PMK
-   + PTK
-   + PEAP
-   + EAP-FAST
-   + LEAP
-   + EAP-TLS
-   + EAP-TTLS
+   + PMK - Pairwise Master Key
+   + PTK - Pairwise Transient Key
+   + PEAP - Requires certificates on servers but not clients.
+   + EAP-FAST - Supports PAC instead of certificates.
+   + EAP-TLS - Requires certificated on servers AND clients.
+   + EAP-TTLS - Requires certificates on servers but not clients.
 #### EAP-FAST supports PAC (Protected Access Credentials) instead of certificates. PEAP and EAP-TTLS requires certificates on the servers but not the clients. EAP-TLS requires certificates on the server and clients.
 * RADIUS Federation -
 * IEEE 802.1X - Used for port security. Good for exposed ports that people may or may not have to plug into to gain access to the network.
-* 
+* Captive Portals - 

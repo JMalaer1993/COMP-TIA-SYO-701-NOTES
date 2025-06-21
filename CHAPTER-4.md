@@ -16,7 +16,7 @@
       - IDS Threshold - Administrators set the IDS threshold to minimize false positives and false negatives, and maximize true positive and true negatives, in a delicate balance.
  * IPS - Intrusion Prevention System. Prevent attacks by detecting them and stopping them before they reach their target. This is an extension of IDS. A big difference with IPSs is that they are "in-line" with data streams, while IDSs sit "out-of-band." This allows IPSs to actually block traffic, while IDSs can only monitor traffic. For this reason, it is said that IPSs are active, while IDSs are passive.
     + Protocol Analyzer -
- * SCADA - 
+ * SCADA - Supervisory Control and Data Acquistion. Used to control and monitor industrial infrastructure like in a power plant, water treatment facility, or oil and gas pipeline.
  * APT - Advanced Persistent Threats.
     + Remote Access Trojan. Installed onto devices through fishing or malware attacks. Allows attackers to send data via an authorized users computer thus bypassing a firewall. This malicious activity could then be stopped by an IPS.
 # Honey
@@ -37,6 +37,7 @@
    + Wifi Analyzer - A tool used in site surveys.
    + Heat Map - This is where the term "hot spot" comes from. The opposite of a hot spot is a "dead spot."
    + Foot Printing - Overlay the heat map onto the blueprint of the building, and you get foot printing. Now you can easily tell where in the building you have hot spots and dead spots.
+# Wireless Protected Access
 * WEP - Wired Equivalent Privacy. Deprecated. Susceptible to IV attacks.
 * WPA - Wi-Fi Protected Access. Deprecated.
 * WPA2 - Much more secure than WPA. Uses AES (advances encryption standars) and CCMP (I'm not even going to say what that stands for). It can operate in 3 modes:
@@ -51,13 +52,15 @@
    + Enhanced Open - Unlike the open mode of WPA2, enhanced open provides security through encryption. Used for guest accounts.
    + SAE - Simultaneous Authentication of Equals. Its like PSK mode of WPA2, but more secure.
    + Enterprise - Pretty much the same as WPA2.
+#### WPA does not use TLS.
 # Authentication Protocols
+#### 802.1X servers use the EAP protocols listed below.
 * EAP - Extensible Authentication Protocol. Has many variations:
    + PMK - Pairwise Master Key
    + PTK - Pairwise Transient Key
-   + PEAP - Requires certificates on servers but not clients.
+   + PEAP - Requires certificates on servers but not clients. Uses TLS, but its not EAP-TLS. Confusion attack.
    + EAP-FAST - Supports PAC instead of certificates.
-   + EAP-TLS - Requires certificated on servers AND clients.
+   + EAP-TLS - Requires certificated on servers AND clients. MOST secure version of EAP.
    + EAP-TTLS - Requires certificates on servers but not clients.
 #### EAP-FAST supports PAC (Protected Access Credentials) instead of certificates. PEAP and EAP-TTLS requires certificates on the servers but not the clients. EAP-TLS requires certificates on the server and clients.
 * RADIUS Federation -
@@ -87,6 +90,8 @@
 * VPN Concentrator -
 * IPsec - IPsec is used to establish VPNs.
    + Tunnel Mode - Used to encrypt data as it travels over a public network like the internet. Hides the prive destination IP address.
+      - Split Tunnel - Only the traffic that is destinated for the private network goes through the secure tunnel.
+      - Full Tunnel - All traffic goes through the secure tunnel even if it is just going to the grocery store.
    + Transport Mode - Only encrypts the payload. Used with data travelling within a private network, not through a public network.
    + AH - Authentication Header.
    + ESP - Encapsulating Security Payload. The encryption protocol IPsec uses. Also provides integrity.
@@ -97,8 +102,6 @@
    + SSTP - Secure Socket Tunneling Protocol. Useful when data must go through a NAT. Uses port 443.
    + OpenVPN -
    + OpenConnect -
-* Split Tunnel -
-* Full Tunnel -
 * Site-to-Site VPNs - Connects networks through a secure tunnel.
 * Always-On VPN - Connects a single user to a network through a secure tunnel.
 * L2TP - Layer 2 Tunneling Protocol. IPsec does the encryption, and then passes the packet along to L2TP, which serves as the tunnel delivering the packet.
@@ -107,6 +110,9 @@
   + Health Checks - Looks for things like patches and vaccinations (anti-virus software).
   + Remediation/Quarantine Network - Its a health clinic! Allows users to get patched up and get their vaccinations.
   + Agents -
+     - Permanent
+     - Dissolvable
+     - Agentless
 * Authorization and Authentication Methods
   + PAP - Password Authentication Protocol. Super insecure because it sends usernames and passwords in cleartext, making is susceptible to sniffing/eavesdropping. Deprecated.
   + CHAP - Challenge Handshake Authentication Protocol. Does NOT send the password, but sends a hash of the password, which is based on a random challenge, which changes every time. So, the passwork + random challenge is compared between the user and server. Match = authentication. Even if an attacker "overhears" the hash, they can't reuse it because it will be different every time depending on the random challenge.

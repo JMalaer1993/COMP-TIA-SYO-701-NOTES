@@ -99,3 +99,19 @@
    + OpenConnect -
 * Split Tunnel -
 * Full Tunnel -
+* Site-to-Site VPNs - Connects networks through a secure tunnel.
+* Always-On VPN - Connects a single user to a network through a secure tunnel.
+* L2TP - Layer 2 Tunneling Protocol. IPsec does the encryption, and then passes the packet along to L2TP, which serves as the tunnel delivering the packet.
+* HTML5 VPN - Provides access to the VPN through a secure browser without any additional software.
+* NAC - Used to check the health of users to ensure they're not bringing any germs to the VPN.
+  + Health Checks - Looks for things like patches and vaccinations (anti-virus software).
+  + Remediation/Quarantine Network - Its a health clinic! Allows users to get patched up and get their vaccinations.
+  + Agents -
+* Authorization and Authentication Methods
+  + PAP - Password Authentication Protocol. Super insecure because it sends usernames and passwords in cleartext, making is susceptible to sniffing/eavesdropping. Deprecated.
+  + CHAP - Challenge Handshake Authentication Protocol. Does NOT send the password, but sends a hash of the password, which is based on a random challenge, which changes every time. So, the passwork + random challenge is compared between the user and server. Match = authentication. Even if an attacker "overhears" the hash, they can't reuse it because it will be different every time depending on the random challenge.
+    - NONCE - A number used once. The challenge must be a nonce, otherwise the attacker could just replay the appropriate response if he sees the same challenge again. The challenge must be for one time only.
+  + PPP - Point-to-Point Protocol. As the name suggests, it just gets the credentials from point-to-point. It is not an authentication method, it just supports and works with the authentication methods (PAP and CHAP, or really just CHAP since PAP is deprecated).
+  + RADIUS - Remote Authentication Dial-In User Service. If you have mutiple VPN servers, and a client may have to access all of them at different points in time, it can be really helpful to have a centralized RADIUS server authenticate the user. This way, instead of each server containing the credentials, only the RADIUS server (or LDAP server), has the credentials, providing much more simplicity.
+  + TACACS+ - A more advanced and secure version of RADIUS.
+  + AAA Protocols - RADIUS and TACACS+ are both considered AAA Protocols.

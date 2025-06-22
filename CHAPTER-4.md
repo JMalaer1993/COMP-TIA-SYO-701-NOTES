@@ -63,31 +63,31 @@
    + EAP-TLS - Requires certificated on servers AND clients. MOST secure version of EAP.
    + EAP-TTLS - Requires certificates on servers but not clients.
 #### EAP-FAST supports PAC (Protected Access Credentials) instead of certificates. PEAP and EAP-TTLS requires certificates on the servers but not the clients. EAP-TLS requires certificates on the server and clients.
-* RADIUS Federation -
+* RADIUS Federation
 * IEEE 802.1X - Used for port security. Good for exposed ports that people may or may not have to plug into to gain access to the network.
-* Captive Portals -
+* Captive Portals
 # Wireless Attacks
-* Disassociation Attack -
-* WPS Attack -
-* Rogue AP -
-* Evil Twin Attack -
-* Jamming/Interference Attack -
-* IV Attack -
-* NFC Attack -
-* RFID Attack -
-   + Snffing/Eavesdropping -
-   + Cloning -
-   + DoS -
-* Bluetooth Attack -
-   + Bluejacking -
-   + Bluesnarfing -
-   + Bluebugging -
-* Wirless Replay Attack -
-* Wireless Audit -
-  + War Driving -
-  + War Flying -
+* Disassociation Attack
+* WPS Attack
+* Rogue AP
+* Evil Twin Attack
+* Jamming/Interference Attack
+* IV Attack
+* NFC Attack
+* RFID Attack
+   + Snffing/Eavesdropping
+   + Cloning
+   + DoS
+* Bluetooth Attack
+   + Bluejacking
+   + Bluesnarfing
+   + Bluebugging
+* Wirless Replay Attack
+* Wireless Audit
+  + War Driving
+  + War Flying
 # Virtual Private Networks
-* VPN Concentrator -
+* VPN Concentrator
 * IPsec - IPsec is used to establish VPNs.
    + Tunnel Mode - Used to encrypt data as it travels over a public network like the internet. Hides the prive destination IP address.
       - Split Tunnel - Only the traffic that is destinated for the private network goes through the secure tunnel.
@@ -96,12 +96,12 @@
    + AH - Authentication Header.
    + ESP - Encapsulating Security Payload. The encryption protocol IPsec uses. Also provides integrity.
    + IKE - Internet Key Exchange. Port 500.
-   + SA -
+   + SA
    + Protocol ID: 50
-* TLS -
+* TLS
    + SSTP - Secure Socket Tunneling Protocol. Useful when data must go through a NAT. Uses port 443.
-   + OpenVPN -
-   + OpenConnect -
+   + OpenVPN
+   + OpenConnect
 * Site-to-Site VPNs - Connects networks through a secure tunnel.
 * Always-On VPN - Connects a single user to a network through a secure tunnel.
 * L2TP - Layer 2 Tunneling Protocol. IPsec does the encryption, and then passes the packet along to L2TP, which serves as the tunnel delivering the packet.
@@ -109,7 +109,7 @@
 * NAC - Used to check the health of users to ensure they're not bringing any germs to the VPN.
   + Health Checks - Looks for things like patches and vaccinations (anti-virus software).
   + Remediation/Quarantine Network - Its a health clinic! Allows users to get patched up and get their vaccinations.
-  + Agents -
+  + Agents
      - Permanent
      - Dissolvable
      - Agentless

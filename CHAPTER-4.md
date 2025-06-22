@@ -1,4 +1,4 @@
-# Advances Security Devices
+# Advanced Security Devices
 #### This is primarily about IDSs and IPSs
  * IDS - Intrusion Detection System. Can only DETECT and attack. Cannot PREVENT an attack.
     + HIDS - Host-Based Intrusion Detection System. Can monitor all traffic that passes through a host system like a server or workstation. Monitors traffic that passes through the NIC. Has expanded to be installed on internet facing servers. Helps detect malware which traditional antivirus software might miss. Often installed on every workstation as an extra layer of protection than just traditional antivirus software.

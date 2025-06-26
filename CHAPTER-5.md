@@ -65,3 +65,46 @@
 * DLP - Data Loss Prevention. Monitors and blocks unauthorized data movement.
 * Removeable Media - USBs, external drives. Often banned. Remember USB = UCMJ? That used to be a friendly little reminder attached to ever USB port on every computer on the ship I used to be stationed on which stated that if you plug anything into the USB port, even a phone charger, you're going to captains mast.
 * NTFS - New Technology File System. Windows file with built in security features.
+* Data in Use -
+* TEE -
+   + SGX -
+## Cloud Concepts
+* Cloud Computing - Delivery of computing services over the internet.
+* Cloud Delivery Models - For Security+ purposed, its important to recognize that the burden of security responsiblity is placed on the user and the CSP (cloud service provider) in different proprotions in each of these models.
+  + SaaS - Software as a Service. A specific sofware is provided to a user. The CSP is resonsible for nearly all security.
+     - Web Based Email
+  + PaaS - Platform as a Service. Less customization but less maintenance. Its like renting an already funished and decorated office space so all you have to worry about is your job.
+    - Serverless Computing 
+  + IaaS - Infrastructure as a Service. More customization but more maintenance. Its like renting out an empty building. Its on you to bring in all the furnature and decorations. Its a lot more work but you totally control your environment.
+* Cloud Deployment Models
+  + Public Cloud - A cloud anyone can pay to access. Owned by a third party (Google, Microsoft, Amazon).
+  + Private Cloud - Not everyone can access it. Usually reserved for a company or organization.
+  + Community Cloud - Kind of like a private cloud, but multiple companies or organizations may access it.
+  + Hybrid Cloud - A cloud that has the combined characterists of the above type of clouds.
+* Multi-Cloud - Some organizations may use multiple CSPs to increase resilience.
+* API - Application Programming Interface. Interfaces that allow applications to talk to eachother.
+  - Amazon Delivery Tracking.
+* API Attacks - APIs are common attack vectors.
+  + Authentication
+  + Authorization
+  + TLS
+* Microservices - Breaking apps into small independent services.
+* MSSP - Managaged Security Service Provider. Sometimes small companies hire MSSP to handle security.
+* MSP - Manged Service Provider. Like MSSP but broader. Handle IT services.
+* Middleware - Software layer between OS and application.
+* Security Considerations - The following are import factors to consider when using cloud.
+  + Availability
+  + Resilience - Ability to recover from failure.
+  + Cost
+  + Responsiveness - Speed.
+  + Scalability - Ability to grow.
+  + Segementation - Logical separation (like VLANs).
+* Premises - Datacenters or servers can be on or off premises.
+  + On - Hosted by local company/organization.
+    - SSO - One login can grant access to multiple systems.
+    - Maintenance - Company/organization manages everything.
+    - Centralized (reduces cost) vs. Decentralized (increases resiliency)
+  + Off - Hosted by third-party.
+    - Maintenance - Third-party handles maintenance.
+    - Location - You might not know where you data is stored unless its specific in the contract.
+

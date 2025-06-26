@@ -107,4 +107,58 @@
   + Off - Hosted by third-party.
     - Maintenance - Third-party handles maintenance.
     - Location - You might not know where you data is stored unless its specific in the contract.
+ * CASB - Cloud Access Security Broker. Provides an additional layer of security on top of the security already provided by the CSP. Especially relevant when multiple CSPs are involved.
+ * Cloud Based DLP
+ * NGSWG - Next Generation Secure Web Gateway. Combines a proxy server and stateless frewall.
+ * Cloud Firewalls - Use ACL just like other firewalls, except YOU can't modify them.
+   + Security Groups - Allows you to modify the firewall rules the affect YOUR resources.
+ * IaC - Infrastructure as Code.
+ * SDN - Software Defined Network. Separated the control plane from the data plane. The data plane stays in the hardware, but the control plane becomes defines by the software.
+   + SD-WAN - Software Defined Wide Area Network.
+ * Edge Computing - The practice of storing and processing data close the the device that actually generates and uses that data. Minimizes latency.
+   + Cruise Control
+ * Fog Computing - Similar to edge computing but processes happen between the device and the cloud. Fog sits on the ground while the cloud is further away.
+ * CSA - Cloud Security Alliance
+   + CCSK - Certificate of Cloud Security Knowledge.
+   + CCM
+  ## Mobile Device
+  * Features - The following are common features of mobile devices.
+    + WNI - Wireless Network Interface.
+    + Local Data Storage
+    + OS
+    + Install Applications
+    + Bluetooth
+    + NFC - Near Field Communication.
+    + GPS
+    + Movement Sensors
+    + Camera
+    + Microphone
+  * Deployment Models
+    + Corporate Owned
+    + COPE - Corporate Owned Personally Enabled. The corporation owns the device but you keep it.
+    + BYOD - You own the device.
+    + CYOD - You own the device, but you have to choose from a list of devices.
+  * Connection Methods
+    + Cellular
+    + Wi-FI
+    + Bluetooth
+  * MDM
+    + UEM - Unified Endpoint Management.
+    + MAM - Mobile Application Management.
+    + Storage Segmentation
+    + Content Management
+    + Containerization - Especially useful for BYOD
+    + Full Device Encryption
+    + Authentication
+      - Context Aware Authentication
+      - Passwords
+      - PINS
+      - Biometrics
+      - Push Notifications
+    + Screen Locks
+    + Remote Wipes
+    + Geolocations
+    + Geofencing - Applications only work when mobile device is within a certain area.
+    + GPS Tagging - A GPS stamp associated with files, like pictures.
+
 

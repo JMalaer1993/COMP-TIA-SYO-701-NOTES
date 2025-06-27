@@ -145,6 +145,7 @@
   * MDM
     + UEM - Unified Endpoint Management.
     + MAM - Mobile Application Management.
+      - Third Party Application Store
     + Storage Segmentation
     + Content Management
     + Containerization - Especially useful for BYOD
@@ -160,5 +161,10 @@
     + Geolocations
     + Geofencing - Applications only work when mobile device is within a certain area.
     + GPS Tagging - A GPS stamp associated with files, like pictures.
-
-
+  * Jailbreaking
+  * Rooting
+  * Firmware
+    + Custom Firmware
+  * OTA Updates
+  * Sideloading
+  * Tethering

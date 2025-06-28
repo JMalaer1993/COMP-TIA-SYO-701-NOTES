@@ -49,6 +49,8 @@
 * UEFI - Unified Extensible Firmware Interface. Secure replacement for BIOS.
 * TPM - Trusted Platform Modules. A chip on the motherboard that perform encryption tasks (key storage, integrity checks).
   + Hardware Root of Trust - Uses TPM to ensure trust starts the boot. All subsequent code must be verified.
+  + Secure Boot
+  + Measured Boot
 * Remote Attestion - TPM sends cryptographic proof of system integrity to remote server.
 ## Cryptographic Hardware
 * HSM - Hardware Security Module. EXTERNAL device the handles cryptographic operations (key generation, encryption).
@@ -109,11 +111,11 @@
     - Location - You might not know where you data is stored unless its specific in the contract.
  * CASB - Cloud Access Security Broker. Provides an additional layer of security on top of the security already provided by the CSP. Especially relevant when multiple CSPs are involved.
  * Cloud Based DLP
- * NGSWG - Next Generation Secure Web Gateway. Combines a proxy server and stateless frewall.
+ * NGSWG - Next Generation Secure Web Gateway. Combines a proxy server and stateless frewall. Can filter URLs and scan for malware.
  * Cloud Firewalls - Use ACL just like other firewalls, except YOU can't modify them.
    + Security Groups - Allows you to modify the firewall rules the affect YOUR resources.
  * IaC - Infrastructure as Code.
- * SDN - Software Defined Network. Separated the control plane from the data plane. The data plane stays in the hardware, but the control plane becomes defines by the software.
+ * SDN - Software Defined Network. Separates the control plane from the data plane. The data plane stays in the hardware, but the control plane becomes defines by the software.
    + SD-WAN - Software Defined Wide Area Network.
  * Edge Computing - The practice of storing and processing data close the the device that actually generates and uses that data. Minimizes latency.
    + Cruise Control
@@ -171,9 +173,9 @@
   * Tethering/Hotspots
   * WiFi Direct
   # Other Random Concepts
-  * Embedded Systems
-    + SoC
-    + RTOS
+  * Embedded Systems - A device that has a specific/dedicated function and uses a computer to perform that function.
+    + SoC - System on a Chip. A circuit that includes a full computing system.
+    + RTOS - Real Time Operating System. A system that reacts to input within a short period of time.
   * Embedded System Constraints
     + Compute
     + Cryptographic
@@ -182,11 +184,10 @@
     + Cost
     + Inability to Patch
   * IoT - This is the way I think about it. The internet of things is made up of devices that can send/recieve messages through the internet. One day in the future, using technology such as nueralink, these devices might be able to communicate directly with our brain, sending us information we might not ordinarily have, or allowing us to control them directly with out mind. Imagine being at work, but being able to see the inside of your house, feed your dog, mow you lawn, turn off your lights, lock your doors, and clean the floor through these devices just by thinking about it. I just learned this is actually called BCI (brain computer interface).
-    + UAV
-  * ICS
-  * SCADA
+    + UAV - Unmanned Aerial Vehicle.
+  * ICS - Industrial Control System.
+  * SCADA - Supervisory Control and Data Acquisition. Controls the ICS. Used in isolated networks not connected to the internet and often has an IPS.
     + Manufacturing
     + Facilities
     + Energy
     + Logistics
-  

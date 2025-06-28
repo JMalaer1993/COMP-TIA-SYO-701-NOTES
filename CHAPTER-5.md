@@ -13,7 +13,7 @@
   + Docker
   + Kubernetes (K8s)
   + Podman
-* VM Escape - Malware in a VM breaks out and interacts with other VMs or the host. Mitigated by isolating VMs and pathing hypervisors.
+* VM Escape - Malware in a VM breaks out and interacts with other VMs or the host. Mitigated by isolating VMs and PATCHING hypervisors.
 * VM Sprawl - Accumulating and losing track of VMs. When the VMs are poorly managed they present a security risk.
 * Resource Reuse - Recycling virtual infrastructure. 
 * Replication - Like copying and pasting VMs into different locations, just like copying and pasting a file in different places.
@@ -161,10 +161,32 @@
     + Geolocations
     + Geofencing - Applications only work when mobile device is within a certain area.
     + GPS Tagging - A GPS stamp associated with files, like pictures.
+  # MD Vulnerabilities
   * Jailbreaking
   * Rooting
   * Firmware
     + Custom Firmware
   * OTA Updates
   * Sideloading
-  * Tethering
+  * Tethering/Hotspots
+  * WiFi Direct
+  # Other Random Concepts
+  * Embedded Systems
+    + SoC
+    + RTOS
+  * Embedded System Constraints
+    + Compute
+    + Cryptographic
+    + Power
+    + Ease of Deployment
+    + Cost
+    + Inability to Patch
+  * IoT - This is the way I think about it. The internet of things is made up of devices that can send/recieve messages through the internet. One day in the future, using technology such as nueralink, these devices might be able to communicate directly with our brain, sending us information we might not ordinarily have, or allowing us to control them directly with out mind. Imagine being at work, but being able to see the inside of your house, feed your dog, mow you lawn, turn off your lights, lock your doors, and clean the floor through these devices just by thinking about it. I just learned this is actually called BCI (brain computer interface).
+    + UAV
+  * ICS
+  * SCADA
+    + Manufacturing
+    + Facilities
+    + Energy
+    + Logistics
+  

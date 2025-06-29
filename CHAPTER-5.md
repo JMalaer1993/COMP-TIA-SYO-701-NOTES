@@ -27,13 +27,20 @@
   + XDR - Extended Detection and Response. Integrates EDR + network + cloud data into a single platform. 
   + HIPS - Detects and blocks malicious activity on a host in real time.
   + Application Allow/Block Lists
-* Hardening - Reducing attack surface through various means such as disabling unused features (ports/protocols/software), changing default passwords, and staying up-to-date with patches.
+* Hardening - Reducing attack surface through various means such as:
+  + Disabling unused features:
+    - Ports
+    - Protocols
+    - Software
+  + Changing default passwords
+  + Staying up-to-date with patches.
 * Configuration Management - Tracking and controlling system settings to ensure consistent security posture.
-* Baseline - Known secure starting state for a system.
+* Baseline - Known secure starting state for a system. 
   + Establish
   + Deploy
   + Maintain
 * Master Images - Preconfigured VM images with hardened settings. Secure baseline. Enables fast deployment of VMs with fewer vulnerabilties.
+  + Integrity Measurements - Identifies deviations from the baseline.
 * Patch Management - A process for regularly applying software updates to ensure your systems are up-to-date with most recent patches.
 * Change Manegement - A formal process for requesting, testing, approving, and documenting changes to your systems. Reduces unintentional distruptions or vulnerabilities. The key goals of change management are to avoid unintended consequences of changes and to document changes.
 ## System Integrity and Boot Integrity
@@ -64,7 +71,7 @@
   + Column Encrpytion - Encrypt certain fields like credit card numbers, but not names or phone numbers.
   + Row Encryption - Encrypt all data associated with a person.
 * Data Exfltration - The unauthorized transfer of data out of a system. Common goal of malware.
-* DLP - Data Loss Prevention. Monitors and blocks unauthorized data movement.
+* DLP - Data Loss Prevention. Monitors and blocks unauthorized data movement. Monitors outgoing traffic.
 * Removeable Media - USBs, external drives. Often banned. Remember USB = UCMJ? That used to be a friendly little reminder attached to ever USB port on every computer on the ship I used to be stationed on which stated that if you plug anything into the USB port, even a phone charger, you're going to captains mast.
 * NTFS - New Technology File System. Windows file with built in security features.
 * Data in Use -
@@ -163,6 +170,7 @@
     + Geolocations
     + Geofencing - Applications only work when mobile device is within a certain area.
     + GPS Tagging - A GPS stamp associated with files, like pictures.
+    + MDM Application - Assigns unique digital IDs to endpoint devices.
   # MD Vulnerabilities
   * Jailbreaking
   * Rooting

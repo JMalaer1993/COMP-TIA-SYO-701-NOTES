@@ -26,14 +26,14 @@
 * Honeyfile - A file designed to attract the attention of a hacker through the clever use of naming the file. For example, "password.txt." This might waste an attacers time skimming through bogus files, which is what we want.
 * Honeytokens - A honeytoken can be contained within a honeyfile, but really its like a fake username or password used to track an attacker. Its like a boguss ID card left sitting out. If the attacker falls for it and uses that ID card, we can then track every door he accesses using that ID card.
 # Wireless Networks
-* WLAN -
-* PAN -
+* WLAN - Wireless Land Area Network.
+* PAN - Personal Area Network.
 * AP - Access Point. As the name suggest, its just an access point to the network. All wireless routers are APs, but not all APs are wireless routers. Some APs just give you access to the network but not the internet.
 * WAN
 * SSID - Service Set Identifyer. The name given to the wireless network. If your AP comes with a default SSID, its a good idea to change it.
 * MAC Filtering - Just as MAC fltering can be used to harden switches, it can also be used to harden wireless routers. Most wireless routers allow you to specific which MAC address to allow, and then it will block all others. This way, no one else can connect to your wireless network, even if they have the password. Unless they spoof their MAC address.
    + Wireless Sniffer - Allows someone to determine which MAC addresses a wireless router allows.
-* Site Survery -
+* Site Survery
    + Wifi Analyzer - A tool used in site surveys.
    + Heat Map - This is where the term "hot spot" comes from. The opposite of a hot spot is a "dead spot."
    + Foot Printing - Overlay the heat map onto the blueprint of the building, and you get foot printing. Now you can easily tell where in the building you have hot spots and dead spots.

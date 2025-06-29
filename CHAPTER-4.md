@@ -74,7 +74,7 @@
 * Jamming/Interference Attack
 * IV Attack
 * NFC Attack
-* RFID Attack
+* RFID (radio frequency identifier) Attack
    + Snffing/Eavesdropping
    + Cloning
    + DoS

@@ -9,7 +9,7 @@
           * SYN Flood
        - Trend Based - AKA anomaly based. Based on deviations from the norm.
           * Zero Day Vulnerability - A vulnerability that is unknown to the vendor and therfore has no patch. These are obviously unknown, and so not detected through signature based detection.
-    + Aggregator -
+    + Aggregator
     + IDS Errors:
       - False Positive - IDS triggers alert but nothing is actually going on. This is like the IDS crying "wolf!" If your IDS is too sensitive, actual alerts/alarms will be ignored.
       - False Negative - IDS does NOT trigger an alert about SOMETHING is actually going on. If your IDS is not sensitive enough, it will fail to detect actual attacks.

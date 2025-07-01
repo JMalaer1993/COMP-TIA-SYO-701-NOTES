@@ -29,7 +29,7 @@
 * WLAN - Wireless Land Area Network.
 * PAN - Personal Area Network.
 * AP - Access Point. As the name suggest, its just an access point to the network. All wireless routers are APs, but not all APs are wireless routers. Some APs just give you access to the network but not the internet.
-* WAN
+* WAN - Wide Area Network.
 * SSID - Service Set Identifyer. The name given to the wireless network. If your AP comes with a default SSID, its a good idea to change it.
 * MAC Filtering - Just as MAC fltering can be used to harden switches, it can also be used to harden wireless routers. Most wireless routers allow you to specific which MAC address to allow, and then it will block all others. This way, no one else can connect to your wireless network, even if they have the password. Unless they spoof their MAC address.
    + Wireless Sniffer - Allows someone to determine which MAC addresses a wireless router allows.

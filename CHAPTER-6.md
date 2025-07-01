@@ -48,12 +48,45 @@
 * Attack Surface - The sum total of the ways an attacker could get into your system. The sum of all entry points that could be exploited.
 * Shadow IT - Unmonitored and unofficial IT. Its a problem because since it is not tracked, it is not managed, and increases attack surface.
 #### Attack surfaces expands with shadow ITs, IoTs, and poor configurations.
-# Malware
-* Malware - Malicious software.
+## Malware
+* Malware - Any software that is intentionally designed to cause damage, gain unauthorized access, or perform malicious actions.
 * Malware Types
-  + Virus - Attaches itself to host application and executes when the user runs the application.
-  + Worms - Self-replicating. Replicates accross systems.
+  + Virus - Injects itself into a HOST program and then executes whenever the user runs that program.
+    - Defense: Antivirus software and avoiding untrusted files.
+  + Worms - SELF-replicating without user interaction and spreads through networks.
+    - Defense: Firwalls and network segmentation.
   + Logic Bomb - Triggered by a condition or time.
+    - Defense: Change monitoring and file integrity tools.
   + Trojans - Malware disguised as something useful like antivirus software.
-    - Drive By Downloads
-    - Scareware - Fake threats like a pop up notifcation saying you are infected with a virus and need to download antivirus software.
+  + Drive By Downloads - Malware is downloaded automatically after visiting a website.
+  + Scareware - Fake threats like a pop up notifcation saying you are infected with a virus and need to download antivirus software.
+  + RAT - Remote Access Trojan. Gives attack remote control of you device.
+    - Defense: Endpoint detection and network monitoring. 
+  + Keyloggers - Can be used to capture username and password, which can be mitigated through 2FA. But, they can still see everything else you write.
+  + Spyware - Secretly gathers information.
+    - Defense: Anti-spyware and monitoring tools
+  + Rootkit - Operates at the kernal or admin level. Hides its presence and/or other malware.
+  + Ransomware - Encrypts files locking users out of their own data. Demands money for the encryption key.
+    - Defense: Backup all your important data.
+  + Bloatware - Unwanted software that slows your system down.
+* Indications of Malware Attacks
+  + Extra Traffic
+  + Data Exfiltration
+  + Encrypted Traffic
+  + Blacklisted Destination IPs
+  + Outgoing Spam
+## Common Attacks
+* Social Engineering - Exploit human vulnerabilities, not technical vulnerabilities.
+  + Impersonation - Attacker pretends to be someone else.
+    - Catch Me If You Can
+  + Shoulder Surfing - Watching over someones shoulder to see what they're typing.
+    - Defense: Screen filters and awareness of surroundings.
+  + Disinformation - Spreading false information to mislead or proke action.
+  + Tailgating - Following closely behind someone and pigging backing off their credentials.
+    - Defense: Control vestibules or mantraps.
+  + Dumpster Diving - Digging through the trash for sensitive information.
+    - Defense: Shredding/Burning
+  + Watering Hole Attack - Compromise an insecure site frequented by the target group.
+  + BEC - Business Email Compromise. Posing as an executive in email.
+  + Typosquatting - Registering domain names very similar to legitimate ones to receive accidental traffic.
+  + Brand Impersonation - Copying the look of a trusted brand.

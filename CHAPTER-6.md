@@ -72,7 +72,7 @@
 * Indications of Malware Attacks
   + Extra Traffic
   + Data Exfiltration
-  + Encrypted Traffic
+  + Encrypted Traffic - Prevents DLP from knowning the type of data that is being exfiltrated.
   + Blacklisted Destination IPs
   + Outgoing Spam
 ## Common Attacks

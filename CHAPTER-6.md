@@ -90,3 +90,30 @@
   + BEC - Business Email Compromise. Posing as an executive in email.
   + Typosquatting - Registering domain names very similar to legitimate ones to receive accidental traffic.
   + Brand Impersonation - Copying the look of a trusted brand.
+  + Elicitation - Gaining information without asking for it directly. The attacker will use conversations tricks to get you to reveal information voluntarily.
+    - Active Listening
+    - Reflective Quesitoning - Asking open ended questions to encourage the target to talk more.
+    - False Statements - Hoping the target will correct you and inadvertently reveal sensitive information.
+    - Bracketing - Saying a range of numbers and hoping the target gives you the eact number.
+  + Pretexting - A form of social engineering that uses a false story or scenario to justify a request for sensitive information. Just regular ol impersonation has no story or pretext or context.
+* Message Based Attacks
+  + Spam - Unwanted email. May not be malicious. Just annoying.
+  + SPIM - Spam over Instant Messaging. May include malware or fake links.
+  + Phishing - Sending emails with malicious links.
+    - Emails from friends
+    - Malware
+    - Validating Email Addresses
+    - 419 Scam
+  + Spear Phishing - Phishing but targeting a specific person or group rather than a generic message sent to thousands of people. May use real names and job titles.
+    - Defense: Email signatures (validates who send the message)
+  + Whaling - Targeting high value people like CEOs.
+  + Vishing - Phishing over a voice call.
+  + Smishing - Phishing over text.
+#### All it takes is one click for an attacker to gain nearly unlimited access to your entire network. Things to watch out for include fake login pages, attachments, requests for sensitive information, and emotional triggers like urgency or fear.
+* Phishing Explained (Simplified)
+  1. Intial Vector: Email with malicious link or attachment.
+  2. User Action: Click link or attachment (game over).
+  3. Payload: Credential harvesting, RAT, ransomware, spyware, ect.
+  4. Post-Compromise: Data theft, privilege escalation, backdoor accounts, lateral movement, ect.
+## Blocking Attacks
+* 

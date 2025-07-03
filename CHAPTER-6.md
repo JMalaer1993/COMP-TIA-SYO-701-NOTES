@@ -114,6 +114,57 @@
   1. Intial Vector: Email with malicious link or attachment.
   2. User Action: Click link or attachment (game over).
   3. Payload: Credential harvesting, RAT, ransomware, spyware, ect.
-  4. Post-Compromise: Data theft, privilege escalation, backdoor accounts, lateral movement, ect.
+  4. Post-Compromise: Data theft privilege escalation, backdoor accounts, lateral movement, ect.
 ## Blocking Attacks
-* 
+* Common Malware Security Controls
+  + UTM - Unified Threat Management. All in one securiy appliance (firewall, IDS, anti-malware, ect).
+  + Anti-Viruse Software - Blocks more than viruses.
+    - Signature Based - Based on KNOWN patterns.
+    - Heuristic Based - Detects UNKNOWN malware behavior.
+  + Spam Filter/Anti-Malware on Mail Gateway - This is a HUGE attack vector, so it stops attacks early.
+  + Anti-Malware Software on All Systems - Provides host level protection.
+  + Firewalls - Controls traffic based on rules.
+    - ACL - Access Control List.
+  + File Integrity Monitors - Detects unauthorized file chamges using hashes.
+## Social Engineering Factors
+* Authority - Claiming power or a certain role to gain compliance.
+  + Impersonation - Pretending to be someone else.
+  + Whaling - Targeting executives (high value targets).
+  + Vishing - Voice phishing.
+* Intimidation - Using threats or pressure to gain compliance.
+* Consensus - Group Think/Social Proof. Following the heard.
+* Scarcity - There's not enough to go around.
+* Urgency - Time pressure.
+* Familiarity - Building rapport.
+  + Shoulder Surfing - You may allow someone you like to look over your shoulder while you work.
+  + Tailgating - You may allow someone you like to follow closely behind you into a restricted access room.
+* Trust - Exploiting perceived legitimacy.
+## Threat Intelligence Sources
+* OSINT - Open Source Intelligence. Available to the public.
+* Closed/Proprietary Intelligence - Not available to the public. Usually higher quality and more targeted than OSINT.
+* Vulernerability Databases
+  + NVD - National Vulerability Database. 
+    - NIST - National Institute of Standards and Technology. Manages NVD.
+  + CVE - Common Vulnerabilties and Exposure. Standardized ID system for known vulnerabilities. Example: CVE-2023-123456
+    - MITRE Corporation. Mangages CVE.
+* TAXII - Trusted Automated eXchange of Indicator Information. Used to transport intel.
+* STIX - Stuctured Threat Information Expression. Format of intel.
+* AIS - Automated Indicator Sharing. Federal threat sharing.
+  + CISA - Cybersecurity Infrastructure Security Agency. Manages AIS.
+* Dark Web - Websites you can't reach through Google. Requires software/credentials to access.
+* Infomation Sharing Organizations - Straight forward.
+* IoC - Indicators of Compromise. Clues a system has be compromised.
+* Predictive Analysis - Using analytics to forecast future attacks.
+* Threat Maps - Real time visualizations of worldwide cyber activity.
+* Repositories - Public collectiong of tools, code, files, or threat intelligence.
+  + Github
+    - The Awesome Threat Intelligence Repository
+* Research Sources - Just know these exist.
+  + Vendor Websites
+  + Conferences
+  + Local Industry Groups
+  + Information SHaring Centers
+  + Academic Journals
+  + FRC
+    - IETF - Internet Engineering Task Force.
+  + Social Media

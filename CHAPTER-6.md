@@ -2,36 +2,37 @@
 ## Understanding Threat Actors
 * Threat Actor Types
   + APT - Advanced persistent threats. Highly sophisticate and well-funded group of attackers. Often linked to nation states. Utilize a long-term strategy.
-  + Nation State Attacker - Backed and employed be governments.
+  + Nation State Attacker - Backed and employed be governments. They seek to advance their country's interests and agenda.
     - China
     - Iran
     - Russia
     - North Korea
-  + Organized Crime - Primarily motivated by money.
-  + Hacker -
-    - Script Kiddie - Unskilled Attacker. Uses premade tools with little sophistication.
+  + Organized Crime - Primarily motivated by money. If they only want money, that is a strong indicator that they fall into this category.
+  + Hacker
+    - Unskilled Attacker/Script Kiddie - Uses premade tools with little sophistication. May purchase exploits online rather than write their own.
     - White Hat (ethical hacker)
     - Black Hack (malicious)
     - Grey Hat
   + Hacktivist - Driven by political, ideological, or social motivations. Anonymous is an example.
-  + Insider Threat - Someone working within the organization. Could be malicous or unintentional.
+  + Insider Threat - Someone working within the organization and has access to internal resources. Could be malicous or unintentional.
+    - Defense: DLP. 
   + Competitor - Rare. Think Google trying to steal information from Microsoft.
-* Threat Actor Attributes
+* Threat Actor Attributes - Attackers vary based on their attributes.
   + Internal
   + External
-  + Resources/Funding
-  + Sophistication/Capability
-* Threat Actor Motivations
+  + Resources/Funding - For example, a nation state attacker may have an abundance of resources, while a script kiddies may have no resources at all.
+  + Sophistication/Capability - A nation state attacker or APT probably has a very high level of sophistication, making them dangerous, while a script kiddie is very unsophisticated.
+* Threat Actor Motivations - Attackers also vary based on their goals or motivations.
   + Data Exfiltration
   + Chaos
-  + Money
-  + Blackmail
-  + Service Disruption
-  + Political/Philosophical Beliefs
+  + Money - Almost certainly organized crime.
+  + Blackmail - Maybe a disgruntled employee or 
+  + Service Disruption - Maybe a competitor or nation state attacker.
+  + Political/Philosophical Beliefs - Most likely a hacktivist. If the question mentions politics, or a cause, its probably taking about a hacktivist.
   + Ethical (White Hats)
   + Revenge
   + Espionage
-  + War
+  + War - Most likely a nation state attacker.
 # Threat Vectors and Attack Surfaces
 * Threat Vectors - How an attacker gets in.
   + Message Based - Uses communication platforms.
@@ -46,7 +47,7 @@
   + Open Ports - Unused services exposed to the internet.
   + Default Credentials - Like default admin accounts.
 * Attack Surface - The sum total of the ways an attacker could get into your system. The sum of all entry points that could be exploited.
-* Shadow IT - Unmonitored and unofficial IT. Its a problem because since it is not tracked, it is not managed, and increases attack surface.
+* Shadow IT - Systems or applications usd within an organization without authorization or approval. They present a problem because since no one knows about them, they are not managed or monitored, nor are they equipped with security controls. This increases attack surface. Our goal is to minimize attack surface.
 #### Attack surfaces expands with shadow ITs, IoTs, and poor configurations.
 ## Malware
 * Malware - Any software that is intentionally designed to cause damage, gain unauthorized access, or perform malicious actions.
@@ -55,20 +56,20 @@
     - Defense: Antivirus software and avoiding untrusted files.
   + Worms - SELF-replicating without user interaction and spreads through networks.
     - Defense: Firwalls and network segmentation.
-  + Logic Bomb - Triggered by a condition or time.
+  + Logic Bomb - Triggered by a condition or time. Insider threats are the suspect for this type of attack. They may leave a logic bomb set to explode well after they leave the company.
     - Defense: Change monitoring and file integrity tools.
   + Trojans - Malware disguised as something useful like antivirus software.
   + Drive By Downloads - Malware is downloaded automatically after visiting a website.
   + Scareware - Fake threats like a pop up notifcation saying you are infected with a virus and need to download antivirus software.
   + RAT - Remote Access Trojan. Gives attack remote control of you device.
     - Defense: Endpoint detection and network monitoring. 
-  + Keyloggers - Can be used to capture username and password, which can be mitigated through 2FA. But, they can still see everything else you write.
+  + Keyloggers - Can be used to capture username and password, which can be mitigated through 2FA. But, they can still see everything else you write. Keyloggers can be hardware plugged into a computer or software downloaded over the internet.
   + Spyware - Secretly gathers information.
     - Defense: Anti-spyware and monitoring tools
   + Rootkit - Operates at the kernal or admin level. Hides its presence and/or other malware.
   + Ransomware - Encrypts files locking users out of their own data. Demands money for the encryption key.
     - Defense: Backup all your important data.
-  + Bloatware - Unwanted software that slows your system down.
+  + Bloatware - Unwanted software that slows your system down. Might change the default browser or default search enginer.
 * Indications of Malware Attacks
   + Extra Traffic
   + Data Exfiltration
@@ -107,7 +108,7 @@
   + Spear Phishing - Phishing but targeting a specific person or group rather than a generic message sent to thousands of people. May use real names and job titles.
     - Defense: Email signatures (validates who send the message)
   + Whaling - Targeting high value people like CEOs.
-  + Vishing - Phishing over a voice call.
+  + Vishing - Phishing over a voice call. Often uses VoIP. It may start with a recorded voice and then switch over to a real life person.
   + Smishing - Phishing over text.
 #### All it takes is one click for an attacker to gain nearly unlimited access to your entire network. Things to watch out for include fake login pages, attachments, requests for sensitive information, and emotional triggers like urgency or fear.
 * Phishing Explained (Simplified)
@@ -121,11 +122,11 @@
   + Anti-Viruse Software - Blocks more than viruses.
     - Signature Based - Based on KNOWN patterns.
     - Heuristic Based - Detects UNKNOWN malware behavior.
-  + Spam Filter/Anti-Malware on Mail Gateway - This is a HUGE attack vector, so it stops attacks early.
+  + Spam Filter/Anti-Malware on Mail Gateway - Configure the fulter to block certain domains or email adresses. This is a HUGE attack vector, so it stops attacks early.
   + Anti-Malware Software on All Systems - Provides host level protection.
   + Firewalls - Controls traffic based on rules.
     - ACL - Access Control List.
-  + File Integrity Monitors - Detects unauthorized file chamges using hashes.
+  + File Integrity Monitors - Detects unauthorized file chamges using hashes. Anti-virus software typically includes this.
 ## Social Engineering Factors
 * Authority - Claiming power or a certain role to gain compliance.
   + Impersonation - Pretending to be someone else.

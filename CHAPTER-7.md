@@ -1,13 +1,13 @@
 # Protecting Against Advanced Attacks
 ## Types of Attacks
-* DoS
-* DDos -
-  + Resource exhaustion.
+* DoS - Denial of Service. Only 1 attacker.
+* DDos - Distributed Denial of Service. 2 or more attackers.
+  + Resource exhaustion. This is the goal of DoS.
   + Reflected - Send from spoofed IP address.
   + Amplified - Small request generates large response.
-  + Indications
-    - NIC
-    - Other resources.
+  + Indications:
+    - Extremely high NIC activity.
+    - Other resources like memory are exhausted.
 * SYN Flood - A type of DoS attack. The attacker sends a SYN request, but never responds to the SYN/ACK. Instead, he just keeps sending SYN requests, never completing the 3-way TCP handshake. This blocks legitimate users from establishing a connection.
 * Forgery - Think faking a signature, or identity theft.
   + Spoofing - A form of forgery where you steal the targets identity by claiming their IP address. You can also spoof an email address or MAC address, but it seems to involve stealing addresses.

@@ -18,4 +18,4 @@
   + Indication - "Not Secure" warning on the browser. The URL suddenly includes HTTP instead of HTTPS.
 * DNS Poisoning Attack - Attempts to modify or currupt data stored on a DNS server. That you you might be directed to a malicious IP address when trying to go to a safe website.
   + DNSSEC
-* Pharming Attack - Very similar to DNS poisoning. The major difference is the instead of changing the DNS data on the DNS server, he changed it on the host device, because DNS information is also stored in the cache of some devices.
+* Pharming Attack - Very similar to DNS poisoning. The major difference is the instead of changing the DNS data on the DNS server, he changes it on the host device, because DNS information is also stored in the cache of some devices.

@@ -18,5 +18,28 @@
   + Indication: "Not Secure" warning on the browser. The URL suddenly includes HTTP instead of HTTPS.
 * DNS Poisoning Attack - Attempts to modify or currupt data stored on a DNS server. That you you might be directed to a malicious IP address when trying to go to a safe website.
   + DNSSEC
-* Pharming Attack - Very similar to DNS poisoning. The major difference is the instead of changing the DNS data on the DNS server, he changes it on the host device, because DNS information is also stored in the cache of some devices.
+* Pharming Attack - Very similar to DNS poisoning. The major difference is the instead of changing the DNS data on the DNS server, it interrupts the DNS resolution process.
   + Indication: You try to go to one website and end up on another website.
+* URL Redirection -
+* Domain Hijacking -
+* DNS Filtering -
+* DNS Sinkhole -
+* DNS Log Files -
+* Replay Attack -
+  + Credential Replay -
+## Secure Coding
+* Input Validation - This is really important so take a moment to digest this one.
+  + Verify Proper Characters
+  + Blocking HTML Code
+  + Prevent Certain Characters
+  + Range Check
+* Client Side Input Validation -
+  + Disable JavaScript
+* Server Side Input Valifation -
+* Race Condition -
+  + TOCTOU
+* Error/Exception Handling
+  + Error Message
+  + Logs
+* Code Obfuscation -
+* Software Diversity - 

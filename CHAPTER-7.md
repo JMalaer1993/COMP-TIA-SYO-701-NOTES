@@ -25,7 +25,7 @@
 * DNS Filtering - Black access to specific domains such as those that are known to be malicious.
 * DNS Sinkhole - Redirects malicous DNS request to a harmless server.
 * DNS Log Files - Log DNS queries from users. These are a good incident investigation tool.
-* Replay Attack - The attacker eavesdrops traffic with a recorder, and then replays the recorder to trick the system into thinking its legitimate. Times stamps and onces are ways to prevent these attacks.
+* Replay Attack - The attacker eavesdrops traffic with a recorder, and then replays the recorder to trick the system into thinking its legitimate. Times stamps, session tokens, MFA, and onces are ways to prevent these attacks.
   + Credential Replay - A type of replay attack in which the attacker replays the credentials to gain access.
 ## Secure Coding
 * Input Validation - This is really important so take a moment to digest this one. Ensuring user input is safe, expected, and constrained.

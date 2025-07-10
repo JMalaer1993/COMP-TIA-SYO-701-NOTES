@@ -48,3 +48,13 @@
   + Malicious code.
   + Lack of updates.
 * Data Exposure - Just encrypt data.
+* HTTP Headers -
+* Secure Cookies -
+* Code Signing
+* Analyzing/Reviewing Code
+  - Static Code Analysis
+  - Manual Code Review
+  - Dynamic Code Analysis
+    + Fuzzing
+  - Sandboxing
+  - Package Monitoring

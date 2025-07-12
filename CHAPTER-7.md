@@ -72,7 +72,7 @@
 ## Application Attacks
 * Memory Leak
 * Buffer Overflow
- + Memory Injection
+  + Memory Injection
 * Integer Overflow
 ## Injection Attacks
 * DLL Injection
@@ -82,26 +82,26 @@
 * XSS
 ## Automation and Orchestration
 * Use Cases
- + User Provisioning
- + Resoucece Provisioning
- + Guardrails
- + Security Groups
- + Ticket Creation
- + Escalation
- + Enabling/Disabling Services
- + Continuous Integration and Testing
- + APIs
+  + User Provisioning
+  + Resoucece Provisioning
+  + Guardrails
+  + Security Groups
+  + Ticket Creation
+  + Escalation
+  + Enabling/Disabling Services
+  + Continuous Integration and Testing
+  + APIs
 * Benefits
- + Efficiency/Time Saving
- + Enforcing Baselines
- + Standard Infrastructure Configuration
- + Scaling
- + Employee Retention
- + Reaction TIme
- + Workforce Multiplier
+  + Efficiency/Time Saving
+  + Enforcing Baselines
+  + Standard Infrastructure Configuration
+  + Scaling
+  + Employee Retention
+  + Reaction TIme
+  + Workforce Multiplier
 * Drawbacks
- + Complexity
- + Cost
- + SPOF
- + Technical Debt
- + Ongoing Supportability
+  + Complexity
+  + Cost
+  + SPOF
+  + Technical Debt
+  + Ongoing Supportability

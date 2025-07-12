@@ -52,9 +52,56 @@
 * Secure Cookies -
 * Code Signing
 * Analyzing/Reviewing Code
-  - Static Code Analysis
-  - Manual Code Review
-  - Dynamic Code Analysis
-    + Fuzzing
-  - Sandboxing
-  - Package Monitoring
+  + Static Code Analysis
+  + Manual Code Review
+  + Dynamic Code Analysis
+    - Fuzzing
+  + Sandboxing
+  + Package Monitoring
+* Software Version Control
+* Secure Development Enviroment
+  + Development
+  + Test
+  + Staging
+  + Production
+  + QA
+* Database Concepts
+  + SQL Queries
+  + SQL Injection Attacks
+* Web Server Logs
+## Application Attacks
+* Memory Leak
+* Buffer Overflow
+ + Memory Injection
+* Integer Overflow
+## Injection Attacks
+* DLL Injection
+* LDAP Injection
+* XML Injection
+* Directory Transversal
+* XSS
+## Automation and Orchestration
+* Use Cases
+ + User Provisioning
+ + Resoucece Provisioning
+ + Guardrails
+ + Security Groups
+ + Ticket Creation
+ + Escalation
+ + Enabling/Disabling Services
+ + Continuous Integration and Testing
+ + APIs
+* Benefits
+ + Efficiency/Time Saving
+ + Enforcing Baselines
+ + Standard Infrastructure Configuration
+ + Scaling
+ + Employee Retention
+ + Reaction TIme
+ + Workforce Multiplier
+* Drawbacks
+ + Complexity
+ + Cost
+ + SPOF
+ + Technical Debt
+ + Ongoing Supportability
